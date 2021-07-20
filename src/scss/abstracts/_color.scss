@@ -1,0 +1,57 @@
+/*-----------------------------------------------
+
+ # Stylesheet: Color Variables Stylesheet
+
+ ----------------------------------------------*/
+
+// :root {
+// 	--color-primary: #0080ff;
+// 	--color-primary--light: color-mod(var(--color-primary) tint(15%));
+// 	--color-primary--lighter: color-mod(var(--color-primary) tint(30%));
+// 	--color-primary--lightest: color-mod(var(--color-primary) tint(45%));
+// 	--color-primary--dark: color-mod(var(--color-primary) shade(15%));
+// 	--color-primary--darker: color-mod(var(--color-primary) shade(30%));
+// 	--color-primary--darkest: color-mod(var(--color-primary) shade(45%));
+// 	--color-primary--background: color-mod(var(--color-primary) a(20%));
+
+// 	--color-accent: #ff2800;
+// 	--color-accent--light: color-mod(var(--color-accent) tint(15%));
+// 	--color-accent--dark: color-mod(var(--color-accent) shade(15%));
+// 	--color-accent--background: color-mod(var(--color-accent) a(20%));
+// }
+
+/**
+ * Block Color Palette
+ * https://www.billerickson.net/wordpress-color-palette-button-styling-gutenberg/
+ * See editor-color-palette in functions.php
+ */
+$colors: (
+	"primary-lighter": #4da6ff,
+	"primary-light": #2693ff,
+	"primary": #0080ff,
+	"primary-dark": #006dd9,
+	"primary-darker": #005ab3,
+	"accent-lighter": #ff694d,
+	"accent-light": #ff4826,
+	"accent": #ff2800,
+	"accent-dark": #d92200,
+	"accent-darker": #b31c00,
+	"gray-lighter": #e1e1e6,
+	"gray-light": #a4a6b5,
+	"gray": #686a84,
+	"gray-dark": #494a5c,
+	"gray-darker": #2a2a35,
+	"white": #f3f3f5,
+	"black": #15151a,
+);
+
+@each $name, $color in $colors {
+	.has-#{$name}-color {
+		color: $color;
+	}
+
+	.has-#{$name}-background-color {
+		background-color: $color;
+		border-color: $color;
+	}
+}

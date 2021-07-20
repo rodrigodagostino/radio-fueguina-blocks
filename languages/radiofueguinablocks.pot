@@ -1,0 +1,217 @@
+# Copyright (C) 2021 Rodrigo D’Agostino
+# This file is distributed under the same license as the Radio Fueguina Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Radio Fueguina Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/radio-fueguina-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-04-18T19:29:29+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: radiofueguinablocks\n"
+
+#. Plugin Name of the plugin
+#: src/init.php:139
+msgid "Radio Fueguina Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/rodrigodagostino/radio-fueguina-blocks/"
+msgstr ""
+
+#. Description of the plugin
+msgid "A collection of Gutenberg blocks for the Radio Fueguina theme."
+msgstr ""
+
+#. Author of the plugin
+msgid "Rodrigo D’Agostino"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.rodrigodagostino.com/"
+msgstr ""
+
+#. translators: content placeholder
+#. translators: block keyword
+#: dist/index.js:3
+#: dist/index.js:5
+#: src/blocks/billboard/index.js:25
+#: src/blocks/billboard/index.js:33
+msgid "Billboard"
+msgstr ""
+
+#: dist/index.js:3
+#: dist/index.js:11
+#: src/blocks/billboard/index.js:26
+#: src/blocks/frontpage-row/index.js:26
+msgid "A single row within a front-page section or column block."
+msgstr ""
+
+#. translators: block keyword
+#: dist/index.js:7
+#: dist/index.js:11
+#: src/blocks/billboard/index.js:35
+#: src/blocks/frontpage-section/index.js:36
+msgid "Radio Fueguina block"
+msgstr ""
+
+#. translators: block keyword
+#: dist/index.js:7
+msgid "Background"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Image"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Replace image"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Choose background image"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Remove image"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Size"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Auto"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Cover"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Contain"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Repeat"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Repeat X"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Repeat Y"
+msgstr ""
+
+#: dist/index.js:7
+msgid "No repeat"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Fixed background"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Overlay"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Overlay opacity"
+msgstr ""
+
+#: dist/index.js:7
+msgid "Select a layout to start with."
+msgstr ""
+
+#: dist/index.js:7
+#: src/blocks/frontpage-section/variations.js:21
+msgid "Layout 1"
+msgstr ""
+
+#: dist/index.js:7
+#: src/blocks/frontpage-section/variations.js:34
+#: src/blocks/frontpage-section/variations.js:156
+#: src/blocks/frontpage-section/variations.js:259
+#: src/blocks/frontpage-section/variations.js:345
+#: src/blocks/frontpage-section/variations.js:428
+msgid "Section Title"
+msgstr ""
+
+#: dist/index.js:7
+#: src/blocks/frontpage-section/variations.js:144
+msgid "Layout 2"
+msgstr ""
+
+#: dist/index.js:7
+#: src/blocks/frontpage-section/variations.js:247
+msgid "Layout 3"
+msgstr ""
+
+#: dist/index.js:7
+#: src/blocks/frontpage-section/variations.js:333
+msgid "Layout 4"
+msgstr ""
+
+#: dist/index.js:7
+#: src/blocks/frontpage-section/variations.js:416
+msgid "Layout 4 (automatic)"
+msgstr ""
+
+#. translators: block keyword
+#: dist/index.js:7
+#: dist/index.js:9
+#: src/blocks/frontpage-section/index.js:26
+#: src/blocks/frontpage-section/index.js:34
+msgid "Front-Page Section"
+msgstr ""
+
+#: dist/index.js:7
+#: src/blocks/frontpage-section/index.js:27
+msgid "The main structural component to display content in the front page."
+msgstr ""
+
+#. translators: block keyword
+#: dist/index.js:11
+#: src/blocks/frontpage-column/index.js:25
+msgid "Front-Page Column"
+msgstr ""
+
+#: dist/index.js:11
+#: src/blocks/frontpage-column/index.js:26
+msgid "A single column within a front-page section or row block."
+msgstr ""
+
+#: dist/index.js:11
+#: src/blocks/frontpage-row/index.js:25
+msgid "Front-Page Row"
+msgstr ""
+
+#: dist/index.js:11
+#: src/block-styles/index.js:30
+msgid "Level 1"
+msgstr ""
+
+#: dist/index.js:11
+#: src/block-styles/index.js:34
+msgid "Level 1 (alternate)"
+msgstr ""
+
+#: dist/index.js:11
+#: src/block-styles/index.js:38
+msgid "Level 2"
+msgstr ""
+
+#: dist/index.js:11
+#: src/block-styles/index.js:42
+msgid "Level 3"
+msgstr ""
+
+#: dist/index.js:11
+#: src/block-styles/index.js:46
+msgid "Level 4"
+msgstr ""

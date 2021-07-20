@@ -1,0 +1,1294 @@
+# Copyright (C) 2020 Rodrigo D’Agostino
+# This file is distributed under the same license as the Radio Fueguina Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Radio Fueguina Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/radio-fueguina-"
+"blocks\n"
+"POT-Creation-Date: 2021-04-18T19:29:29+02:00\n"
+"PO-Revision-Date: 2021-04-18 14:31-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+#: src/init.php:139
+msgid "Radio Fueguina Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/rodrigodagostino/radio-fueguina-blocks/"
+msgstr ""
+
+#. Description of the plugin
+msgid "A collection of Gutenberg blocks for the Radio Fueguina theme."
+msgstr ""
+"Una colección de bloques de Gutenberg para la plantilla Radio Fueguina."
+
+#. Author of the plugin
+msgid "Rodrigo D’Agostino"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.rodrigodagostino.com/"
+msgstr ""
+
+#. translators: content placeholder
+#. translators: block keyword
+#: dist/index.js:3 dist/index.js:5 src/blocks/billboard/index.js:25
+#: src/blocks/billboard/index.js:33
+msgid "Billboard"
+msgstr "Cartelera"
+
+#: dist/index.js:3 dist/index.js:11 src/blocks/billboard/index.js:26
+#: src/blocks/frontpage-row/index.js:26
+msgid "A single row within a front-page section or column block."
+msgstr ""
+"Una fila simple dentro de un bloque de sección o de columna de portada."
+
+#. translators: block keyword
+#: dist/index.js:7 dist/index.js:11 src/blocks/billboard/index.js:35
+#: src/blocks/frontpage-section/index.js:36
+msgid "Radio Fueguina block"
+msgstr "Bloque de Radio Fueguina"
+
+#. translators: block keyword
+#: dist/index.js:7
+msgid "Background"
+msgstr "Fondo"
+
+#: dist/index.js:7
+msgid "Image"
+msgstr "Imagen"
+
+#: dist/index.js:7
+msgid "Replace image"
+msgstr "Reemplazar imagen"
+
+#: dist/index.js:7
+msgid "Choose background image"
+msgstr "Elegir imagen de fondo"
+
+#: dist/index.js:7
+msgid "Remove image"
+msgstr "Quitar imagen"
+
+#: dist/index.js:7
+msgid "Size"
+msgstr "Tamaño"
+
+#: dist/index.js:7
+msgid "Auto"
+msgstr "Automático"
+
+#: dist/index.js:7
+msgid "Cover"
+msgstr "Cubrir"
+
+#: dist/index.js:7
+msgid "Contain"
+msgstr "Contener"
+
+#: dist/index.js:7
+msgid "Repeat"
+msgstr "Repetir"
+
+#: dist/index.js:7
+msgid "Repeat X"
+msgstr "Repetir X"
+
+#: dist/index.js:7
+msgid "Repeat Y"
+msgstr "Repetir Y"
+
+#: dist/index.js:7
+msgid "No repeat"
+msgstr "No repetir"
+
+#: dist/index.js:7
+msgid "Fixed background"
+msgstr "Fondo fijo"
+
+#: dist/index.js:7
+msgid "Overlay"
+msgstr "Capa superpuesta"
+
+#: dist/index.js:7
+msgid "Overlay opacity"
+msgstr "Opacidad de capa superpuesta"
+
+#: dist/index.js:7
+msgid "Select a layout to start with."
+msgstr "Elige un diseño con el cual comenzar."
+
+#: dist/index.js:7 src/blocks/frontpage-section/variations.js:21
+msgid "Layout 1"
+msgstr "Diseño 1"
+
+#: dist/index.js:7 src/blocks/frontpage-section/variations.js:34
+#: src/blocks/frontpage-section/variations.js:156
+#: src/blocks/frontpage-section/variations.js:259
+#: src/blocks/frontpage-section/variations.js:345
+#: src/blocks/frontpage-section/variations.js:428
+msgid "Section Title"
+msgstr "Título de sección"
+
+#: dist/index.js:7 src/blocks/frontpage-section/variations.js:144
+msgid "Layout 2"
+msgstr "Diseño 2"
+
+#: dist/index.js:7 src/blocks/frontpage-section/variations.js:247
+msgid "Layout 3"
+msgstr "Diseño 3"
+
+#: dist/index.js:7 src/blocks/frontpage-section/variations.js:333
+msgid "Layout 4"
+msgstr "Diseño 4"
+
+#: dist/index.js:7 src/blocks/frontpage-section/variations.js:416
+msgid "Layout 4 (automatic)"
+msgstr "Diseño 4 (automático)"
+
+#. translators: block keyword
+#: dist/index.js:7 dist/index.js:9 src/blocks/frontpage-section/index.js:26
+#: src/blocks/frontpage-section/index.js:34
+msgid "Front-Page Section"
+msgstr "Sección de portada"
+
+#: dist/index.js:7 src/blocks/frontpage-section/index.js:27
+msgid "The main structural component to display content in the front page."
+msgstr ""
+"El componente estructural principal para mostrar contenido en la portada."
+
+#. translators: block keyword
+#: dist/index.js:11 src/blocks/frontpage-column/index.js:25
+msgid "Front-Page Column"
+msgstr "Columna de portada"
+
+#: dist/index.js:11 src/blocks/frontpage-column/index.js:26
+msgid "A single column within a front-page section or row block."
+msgstr ""
+"Una columna simple dentro de un bloque de sección o de fila de portada."
+
+#: dist/index.js:11 src/blocks/frontpage-row/index.js:25
+msgid "Front-Page Row"
+msgstr "Fila de portada"
+
+#: dist/index.js:11 src/block-styles/index.js:30
+msgid "Level 1"
+msgstr "Nivel 1"
+
+#: dist/index.js:11 src/block-styles/index.js:34
+msgid "Level 1 (alternate)"
+msgstr "Nivel 1 (alternativo)"
+
+#: dist/index.js:11 src/block-styles/index.js:38
+msgid "Level 2"
+msgstr "Nivel 2"
+
+#: dist/index.js:11 src/block-styles/index.js:42
+msgid "Level 3"
+msgstr "Nivel 3"
+
+#: dist/index.js:11 src/block-styles/index.js:46
+msgid "Level 4"
+msgstr "Nivel 4"
+
+#~ msgid "Display an icon along with complementary text elements."
+#~ msgstr "Muestra un ícono justo a elementos de texto complementarios."
+
+#~ msgid "A collection of flexible and simple Gutenberg blocks."
+#~ msgstr "Una colección de bloques flexibles y simples para Gutenberg."
+
+#~ msgid "(no title)"
+#~ msgstr "(sin título)"
+
+#~ msgid "%d comment"
+#~ msgid_plural "%d comments"
+#~ msgstr[0] "%d comentario"
+#~ msgstr[1] "%d comentarios"
+
+#~ msgid "Previous slide"
+#~ msgstr "Diapositiva anterior"
+
+#~ msgid "Next slide"
+#~ msgstr "Diapositiva siguiente"
+
+#~ msgid "Settings"
+#~ msgstr "Ajustes"
+
+#~ msgid "Align left"
+#~ msgstr "Alinear a la izquierda"
+
+#~ msgid "Align center"
+#~ msgstr "Alinear al centro"
+
+#~ msgid "Align right"
+#~ msgstr "Alinear a la derecha"
+
+#~ msgid "Align space evenly"
+#~ msgstr "Alinear espacio uniforme"
+
+#~ msgid "Align space around"
+#~ msgstr "Alinear espacio alrededor"
+
+#~ msgid "Align space between"
+#~ msgstr "Alinear espacio en medio"
+
+#~ msgid "Change horizontal alignment"
+#~ msgstr "Cambiar alineación horizontal"
+
+#~ msgid "Apply"
+#~ msgstr "Aplicar"
+
+#~ msgid "More options"
+#~ msgstr "Más opciones"
+
+#~ msgid "Open in current tab"
+#~ msgstr "Abrir en pestaña actual"
+
+#~ msgid "Open in new tab"
+#~ msgstr "Abrir en pestaña nueva"
+
+#~ msgid "Open in modal window"
+#~ msgstr "Abrir en ventana modal"
+
+#~ msgid "Type the icon name…"
+#~ msgstr "Ingresa el nombre de ícono…"
+
+#~ msgid "No icons found."
+#~ msgstr "No se encontraron íconos."
+
+#~ msgid "Select icon"
+#~ msgstr "Elegir ícono"
+
+#~ msgid "Gap size"
+#~ msgstr "Tamaño de separación"
+
+#~ msgid "Gap size unit"
+#~ msgstr "Unidad de tamaño de separación"
+
+#~ msgid "Minimum height"
+#~ msgstr "Alto mínimo"
+
+#~ msgid "Minimum height unit"
+#~ msgstr "Unidad de alto mínimo"
+
+#~ msgid "Content width"
+#~ msgstr "Ancho de contenido"
+
+#~ msgid "Content width unit"
+#~ msgstr "Unidad de ancho de contenido"
+
+#~ msgid "Top margin"
+#~ msgstr "Margen superior"
+
+#~ msgid "Top margin unit"
+#~ msgstr "Unidad de margen superior"
+
+#~ msgid "Bottom margin"
+#~ msgstr "Margen inferior"
+
+#~ msgid "Bottom margin unit"
+#~ msgstr "Unidad de margen inferior"
+
+#~ msgid "Top padding"
+#~ msgstr "Relleno superior"
+
+#~ msgid "Top padding unit"
+#~ msgstr "Unidad de relleno superior"
+
+#~ msgid "Left padding"
+#~ msgstr "Relleno izquierdo"
+
+#~ msgid "Left padding unit"
+#~ msgstr "Unidad de relleno izquierdo"
+
+#~ msgid "Right padding"
+#~ msgstr "Relleno derecho"
+
+#~ msgid "Right padding unit"
+#~ msgstr "Unidad de relleno derecho"
+
+#~ msgid "Bottom padding"
+#~ msgstr "Relleno inferior"
+
+#~ msgid "Bottom padding unit"
+#~ msgstr "Unidad de relleno inferior"
+
+#~ msgid "Main"
+#~ msgstr "Principal"
+
+#~ msgid "Horizontal alignment"
+#~ msgstr "Alineación horizontal"
+
+#~ msgid "Border radius"
+#~ msgstr "Radio de esquinas"
+
+#~ msgid "Border radius unit"
+#~ msgstr "Unidad de radio de esquinas"
+
+#~ msgid "Button width"
+#~ msgstr "Ancho del botón"
+
+#~ msgid "Automatic"
+#~ msgstr "Automático"
+
+#~ msgid "Full"
+#~ msgstr "Completo"
+
+#~ msgid "Type the button title…"
+#~ msgstr "Ingresa el título del botón…"
+
+#~ msgid "It will show to the user as a tooltip."
+#~ msgstr "Se mostrará al usuario en forma de descripción emergente."
+
+#~ msgid "Icon"
+#~ msgstr "Ícono"
+
+#~ msgid "Icon size"
+#~ msgstr "Tamaño de ícono"
+
+#~ msgid "Icon position"
+#~ msgstr "Posición de ícono"
+
+#~ msgid "Display icon only"
+#~ msgstr "Mostrar sólo el ícono"
+
+#~ msgid "Use custom icon"
+#~ msgstr "Utilizar ícono personalizado"
+
+#~ msgid "Custom icon"
+#~ msgstr "Ícono personalizado"
+
+#~ msgid "Insert the HTML code for your custom icon."
+#~ msgstr "Ingresa el código HTML para tu ícono personalizado."
+
+#~ msgid "Color"
+#~ msgstr "Color"
+
+#~ msgid "Spacing"
+#~ msgstr "Espaciado"
+
+#~ msgid "Write text…"
+#~ msgstr "Escribe el texto…"
+
+#~ msgid "Button"
+#~ msgstr "Botón"
+
+#~ msgid "Prompt visitors to take action with a button-style link."
+#~ msgstr ""
+#~ "Anima a los visitantes a que realicen alguna acción con un enlace estilo "
+#~ "botón."
+
+#~ msgid "fleximple block"
+#~ msgstr "bloque fleximple"
+
+#~ msgid "Fill"
+#~ msgstr "Relleno"
+
+#~ msgid "Outline"
+#~ msgstr "Contorno"
+
+#~ msgid "Clear"
+#~ msgstr "Vacío"
+
+#~ msgid "Buttons"
+#~ msgstr "Botones"
+
+#~ msgid "Orientation"
+#~ msgstr "Orientación"
+
+#~ msgid "Horizontal"
+#~ msgstr "Horizontal"
+
+#~ msgid "Vertical"
+#~ msgstr "Vertical"
+
+#~ msgid "Prompt visitors to take action with a group of button-style links."
+#~ msgstr ""
+#~ "Anima a los visitantes a que realicen alguna acción con un grupo de "
+#~ "enlaces estilo botón."
+
+#~ msgid "Heading level"
+#~ msgstr "Nivel de encabezado"
+
+#~ msgid "Text alignment"
+#~ msgstr "Alineación de texto"
+
+#~ msgid "“nofollow” attribute"
+#~ msgstr "Atributo “nofollow”"
+
+#~ msgid "Google search spider should not follow the links to this post."
+#~ msgstr ""
+#~ "La araña de búsqueda de Google no debe seguir los enlaces a estas "
+#~ "publicaciones."
+
+#~ msgid "Google search spider should follow the links to this post."
+#~ msgstr ""
+#~ "La araña de búsqueda de Google debe seguir los enlaces a estas "
+#~ "publicaciones."
+
+#~ msgid "“noreferrer” attribute"
+#~ msgstr "Atributo “noreferrer”"
+
+#~ msgid ""
+#~ "The browser should not send an HTTP referer header if the user follows "
+#~ "the hyperlink."
+#~ msgstr ""
+#~ "El navegador no debe enviar un encabezado de referencia HTTP si el "
+#~ "usuario sigue el hipervínculo."
+
+#~ msgid ""
+#~ "The browser should send an HTTP referer header if the user follows the "
+#~ "hyperlink."
+#~ msgstr ""
+#~ "El navegador debe enviar un encabezado de referencia HTTP si el usuario "
+#~ "sigue el hipervínculo."
+
+#~ msgid "Custom Icon"
+#~ msgstr "Ícono personalizado"
+
+#~ msgid "Display"
+#~ msgstr "Mostrar"
+
+#~ msgid "Display heading"
+#~ msgstr "Mostrar título"
+
+#~ msgid "Display description"
+#~ msgstr "Mostrar descripción"
+
+#~ msgid "Display button"
+#~ msgstr "Mostrar botón"
+
+#~ msgid "Write heading…"
+#~ msgstr "Escribe el encabezado…"
+
+#~ msgid "Write description…"
+#~ msgstr "Escribe la descripción…"
+
+#~ msgid "Feature"
+#~ msgstr "Característica"
+
+#~ msgid "Heading"
+#~ msgstr "Encabezado"
+
+#~ msgid "Subhead"
+#~ msgstr "Subtítulo"
+
+#~ msgid "Additional content"
+#~ msgstr "Contenido adicional"
+
+#~ msgid "Hide heading"
+#~ msgstr "Ocultar encabezado"
+
+#~ msgid "Display subhead"
+#~ msgstr "Mostrar subtítulo"
+
+#~ msgid "Hide subhead"
+#~ msgstr "Ocultar subtítulo"
+
+#~ msgid "Display additional content"
+#~ msgstr "Mostrar contenido adicional"
+
+#~ msgid "Hide additional content"
+#~ msgstr "Ocultar contenido adicional"
+
+#~ msgid "Write subhead…"
+#~ msgstr "Escribe el subtítulo…"
+
+#~ msgid "Header"
+#~ msgstr "Cabecera"
+
+#~ msgid ""
+#~ "Introduce new sections and organize content to help visitors (and search "
+#~ "engines) better understand the structure of your site."
+#~ msgstr ""
+#~ "Introduce nuevas secciones y organice contenido para ayudar a los "
+#~ "visitantes (y a los motores de búsqueda) a comprender mejor la estructura "
+#~ "de su sitio."
+
+#~ msgid "heading"
+#~ msgstr "encabezado"
+
+#~ msgid "title"
+#~ msgstr "título"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Type the iFrame URL…"
+#~ msgstr "Ingresa el la URL del iFrame…"
+
+#~ msgid "Width"
+#~ msgstr "Ancho"
+
+#~ msgid "Width unit"
+#~ msgstr "Unidad de ancho"
+
+#~ msgid "Height"
+#~ msgstr "Alto"
+
+#~ msgid "Height unit"
+#~ msgstr "Unidad de alto"
+
+#~ msgid "Adjust height automatically"
+#~ msgstr "Ajustar altura automáticamente"
+
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "Type the iFrame title…"
+#~ msgstr "Ingresa el título del iFrame…"
+
+#~ msgid ""
+#~ "An inline frame used to embed another document within the current "
+#~ "document."
+#~ msgstr ""
+#~ "Un marco en línea utilizado para incrustar otro documento dentro del "
+#~ "documento actual."
+
+#~ msgid "iFrame"
+#~ msgstr "iFrame"
+
+#~ msgid "Location"
+#~ msgstr "Ubicación"
+
+#~ msgid "Search a location…"
+#~ msgstr "Busca una ubicación…"
+
+#~ msgid "Loading…"
+#~ msgstr "Cargando…"
+
+#~ msgid "No results found."
+#~ msgstr "No se encontraron resultados."
+
+#~ msgid "Zoom"
+#~ msgstr "Zoom"
+
+#~ msgid "Layer"
+#~ msgstr "Capa"
+
+#~ msgid "Standard"
+#~ msgstr "Estándar"
+
+#~ msgid "Black and white"
+#~ msgstr "Blanco y negro"
+
+#~ msgid "Humanitarian"
+#~ msgstr "Humanitaria"
+
+#~ msgid "Watercolor"
+#~ msgstr "Acuarela"
+
+#~ msgid "Display popup"
+#~ msgstr "Mostrar ventana emergente"
+
+#~ msgid "Click on the marker to display the popup."
+#~ msgstr "Has clic en el marcador para mostrar la ventana emergente."
+
+#~ msgid "Display zoom control"
+#~ msgstr "Mostrar control de zoom"
+
+#~ msgid "Display attribution control"
+#~ msgstr "Mostrar control de atribución"
+
+#~ msgid "Map"
+#~ msgstr "Mapa"
+
+#~ msgid "Embed a simple map with a location of your choosing."
+#~ msgstr "Incrusta un mapa sencillo con una ubicación de su elección."
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Post"
+#~ msgstr "Entrada"
+
+#~ msgid "Search a post…"
+#~ msgstr "Busca una entrada…"
+
+#~ msgid "No posts found."
+#~ msgstr "No se encontraron entradas."
+
+#~ msgid "Post type"
+#~ msgstr "Tipo de entrada"
+
+#~ msgid "Media"
+#~ msgstr "Multimedia"
+
+#~ msgid "Featured image"
+#~ msgstr "Imagen destacada"
+
+#~ msgid "Audio"
+#~ msgstr "Audio"
+
+#~ msgid "Content"
+#~ msgstr "Contenido"
+
+#~ msgid "Categories"
+#~ msgstr "Categorías"
+
+#~ msgid "Meta"
+#~ msgstr "Metadatos"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Date"
+#~ msgstr "Fecha"
+
+#~ msgid "Comments"
+#~ msgstr "Comentarios"
+
+#~ msgid "Excerpt"
+#~ msgstr "Extracto"
+
+#~ msgid "Read more"
+#~ msgstr "Leer más"
+
+#~ msgid "Display media"
+#~ msgstr "Mostrar multimedia"
+
+#~ msgid "Hide media"
+#~ msgstr "Ocultar multimedia"
+
+#~ msgid "Display featured image"
+#~ msgstr "Mostrar imagen destacada"
+
+#~ msgid "Hide featured image"
+#~ msgstr "Ocultar imagen destacada"
+
+#~ msgid "Display audio"
+#~ msgstr "Mostrar audio"
+
+#~ msgid "Hide audio"
+#~ msgstr "Ocultar audio"
+
+#~ msgid "Display content"
+#~ msgstr "Mostrar contenido"
+
+#~ msgid "Hide content"
+#~ msgstr "Ocultar contenido"
+
+#~ msgid "Display categories"
+#~ msgstr "Mostrar categorías"
+
+#~ msgid "Hide categories"
+#~ msgstr "Ocultar categorías"
+
+#~ msgid "Display title"
+#~ msgstr "Mostrar título"
+
+#~ msgid "Hide title"
+#~ msgstr "Ocultar título"
+
+#~ msgid "Display meta"
+#~ msgstr "Mostrar metadatos"
+
+#~ msgid "Hide meta"
+#~ msgstr "Ocultar metadatos"
+
+#~ msgid "Display author"
+#~ msgstr "Mostrar autor"
+
+#~ msgid "Hide author"
+#~ msgstr "Ocultar autor"
+
+#~ msgid "Display date"
+#~ msgstr "Mostrar fecha"
+
+#~ msgid "Hide date"
+#~ msgstr "Ocultar fecha"
+
+#~ msgid "Display comments"
+#~ msgstr "Mostrar comentarios"
+
+#~ msgid "Hide comments"
+#~ msgstr "Ocultar comentarios"
+
+#~ msgid "Display excerpt"
+#~ msgstr "Mostrar extracto"
+
+#~ msgid "Hide excerpt"
+#~ msgstr "Ocultar extracto"
+
+#~ msgid "Display read more"
+#~ msgstr "Mostrar leer más"
+
+#~ msgid "Hide read more"
+#~ msgstr "Ocultar leer más"
+
+#~ msgid "Max number of words in excerpt"
+#~ msgstr "Número máximo de palabras en el extracto"
+
+#~ msgid "Aspect ratio"
+#~ msgstr "Relación de aspecto"
+
+#~ msgid "Read more text"
+#~ msgstr "Texto leer más"
+
+#~ msgid "Display a specific post or page."
+#~ msgstr "Muestra una entrada o página específica."
+
+#~ msgid "Stacked"
+#~ msgstr "Apilado"
+
+#~ msgid "Posts"
+#~ msgstr "Entradas"
+
+#~ msgid "Offset"
+#~ msgstr "Deducción"
+
+#~ msgid "Include category…"
+#~ msgstr "Incluir categoría…"
+
+#~ msgid "Excluded categories"
+#~ msgstr "Excluir categorías"
+
+#~ msgid "Exclude category…"
+#~ msgstr "Excluir categoría…"
+
+#~ msgid "Number of posts"
+#~ msgstr "Número de entradas"
+
+#~ msgid "Posts per view"
+#~ msgstr "Entradas por diapositiva"
+
+#~ msgid "Autoplay"
+#~ msgstr "Reproducción automática"
+
+#~ msgid "Loop"
+#~ msgstr "Bucle"
+
+#~ msgid "Speed"
+#~ msgstr "Velocidad"
+
+#~ msgid "In milliseconds."
+#~ msgstr "En milisegundos."
+
+#~ msgid "Delay"
+#~ msgstr "Demora"
+
+#~ msgid "Distance between slides"
+#~ msgstr "Distancia entre diapositivas"
+
+#~ msgid "In pixels."
+#~ msgstr "En píxeles."
+
+#~ msgid "Effect"
+#~ msgstr "Efecto"
+
+#~ msgid "Slide"
+#~ msgstr "Deslizar"
+
+#~ msgid "Fade"
+#~ msgstr "Desvanecer"
+
+#~ msgid "Flip"
+#~ msgstr "Voltear"
+
+#, fuzzy
+#~ msgid "Coverflow"
+#~ msgstr "Flujo de portada"
+
+#~ msgid "Cube"
+#~ msgstr "Cubo"
+
+#~ msgid "Pagination"
+#~ msgstr "Paginación"
+
+#~ msgid "Bullets"
+#~ msgstr "Viñetas"
+
+#~ msgid "Progress bar"
+#~ msgstr "Barra de progreso"
+
+#~ msgid "Sorting and filtering"
+#~ msgstr "Orden y filtrado"
+
+#~ msgid "Manually select posts"
+#~ msgstr "Elegir entradas manualmente"
+
+#~ msgid "Google search spider should not follow the links to these posts."
+#~ msgstr ""
+#~ "La araña de búsqueda de Google no debe seguir los enlaces a estas "
+#~ "publicaciones."
+
+#~ msgid "Google search spider should follow the links to these posts."
+#~ msgstr ""
+#~ "La araña de búsqueda de Google debe seguir los enlaces a estas "
+#~ "publicaciones."
+
+#~ msgid "Image size"
+#~ msgstr "Tamaño de imagen"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Miniatura"
+
+#~ msgid "Medium"
+#~ msgstr "Medio"
+
+#~ msgid "Large"
+#~ msgstr "Grande"
+
+#~ msgid "Icons"
+#~ msgstr "Íconos"
+
+#~ msgid "Previous button"
+#~ msgstr "Botón anterior"
+
+#~ msgid "Next button"
+#~ msgstr "Botón siguiente"
+
+#~ msgid "Button icon size"
+#~ msgstr "Tamaño de ícono de botón"
+
+#~ msgid "Button icon"
+#~ msgstr "Ícono de botón"
+
+#~ msgid "Post Carousel"
+#~ msgstr "Carrusel de Entradas"
+
+#~ msgid "Display a list of your most recent posts."
+#~ msgstr "Muestra una lista de tus entradas más recientes."
+
+#~ msgid "Media gap size"
+#~ msgstr "Tamaño de separación de multimedia"
+
+#~ msgid "Media gap size unit"
+#~ msgstr "Unidad de tamaño de separación de multimedia"
+
+#~ msgid "Content gap size"
+#~ msgstr "Tamaño de separación de contenido"
+
+#~ msgid "Content gap size unit"
+#~ msgstr "Unidad de tamaño de separación de contenido"
+
+#~ msgid "Reverse order"
+#~ msgstr "Orden inverso"
+
+#~ msgid "Set profile image"
+#~ msgstr "Establecer imagen de perfil"
+
+#~ msgid "Media width"
+#~ msgstr "Ancho de multimedia"
+
+#~ msgid "Media width unit"
+#~ msgstr "Unidad de ancho de multimedia"
+
+#~ msgid "Media height"
+#~ msgstr "Alto de multimedia"
+
+#~ msgid "Media height unit"
+#~ msgstr "Unidad de alto de multimedia"
+
+#~ msgid "Write name…"
+#~ msgstr "Escribe el nombre…"
+
+#~ msgid "Write title…"
+#~ msgstr "Escribe el título…"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "Introduce your staff members to your visitors."
+#~ msgstr "Presenta a los miembros de tu personal a tus visitantes."
+
+#~ msgid "Number of items"
+#~ msgstr "Número de elementos"
+
+#~ msgid "Columns"
+#~ msgstr "Columnas"
+
+#~ msgid "Row gap"
+#~ msgstr "Separación de filas"
+
+#~ msgid "Row gap unit"
+#~ msgstr "Unidad de separación de filas"
+
+#~ msgid "Column gap"
+#~ msgstr "Separación de columnas"
+
+#~ msgid "Column gap unit"
+#~ msgstr "Unidad de separación de columnas"
+
+#~ msgid "Image width"
+#~ msgstr "Ancho de imagen"
+
+#~ msgid "List view"
+#~ msgstr "Vista de lista"
+
+#~ msgid "Grid view"
+#~ msgstr "Vista de grilla"
+
+#~ msgid "Recent Posts"
+#~ msgstr "Entradas Recientes"
+
+#~ msgid "Align top"
+#~ msgstr "Alinear a la parte superior"
+
+#~ msgid "Align bottom"
+#~ msgstr "Alinear a la parte inferior"
+
+#~ msgid "Change vertical alignment"
+#~ msgstr "Cambiar alineación vertical"
+
+#~ msgid "Write content…"
+#~ msgstr "Escribe el contenido…"
+
+#~ msgid "Row ID"
+#~ msgstr "ID de fila"
+
+#~ msgid "Type the row ID…"
+#~ msgstr "Ingresa el ID de fila…"
+
+#~ msgid "HTML Tag"
+#~ msgstr "Etiqueta HTML"
+
+#~ msgid "Vertical Alignment"
+#~ msgstr "Alineación vertical"
+
+#~ msgid "Row"
+#~ msgstr "Fila"
+
+#~ msgid ""
+#~ "The single unit that works as the main structural component for the tabs "
+#~ "block."
+#~ msgstr ""
+#~ "La unidad individual que funciona como el componente estructural "
+#~ "principal para el bloque de pestañas."
+
+#~ msgid "Add content…"
+#~ msgstr "Añade el contenido…"
+
+#~ msgid "Tab"
+#~ msgstr "Pestaña"
+
+#~ msgid "Sort tab"
+#~ msgstr "Ordenar pestaña"
+
+#~ msgid "Write tab title…"
+#~ msgstr "Escribe el título de la pestaña…"
+
+#~ msgid "Remove tab"
+#~ msgstr "Quitar pestaña"
+
+#~ msgid "Add tab"
+#~ msgstr "Añadir pestaña"
+
+#~ msgid "Tabs"
+#~ msgstr "Pestañas"
+
+#~ msgid "Organize your content within tabs."
+#~ msgstr "Organiza tu contenido dentro de pestañas."
+
+#~ msgid "Underlined"
+#~ msgstr "Subrayado"
+
+#~ msgid "Pills"
+#~ msgstr "Pastillas"
+
+#~ msgid "Quote"
+#~ msgstr "Cita"
+
+#~ msgid "Reference"
+#~ msgstr "Referencia"
+
+#~ msgid "Display icon"
+#~ msgstr "Mostrar ícono"
+
+#~ msgid "Hide icon"
+#~ msgstr "Ocultar ícono"
+
+#~ msgid "Display quote"
+#~ msgstr "Mostrar cita"
+
+#~ msgid "Hide quote"
+#~ msgstr "Ocultar cita"
+
+#~ msgid "Display reference"
+#~ msgstr "Mostrar referencia"
+
+#~ msgid "Hide reference"
+#~ msgstr "Ocultar referencia"
+
+#~ msgid "Write quote…"
+#~ msgstr "Escribe la cita…"
+
+#~ msgid "Set testimonial image"
+#~ msgstr "Establecer imagen de testimonio"
+
+#~ msgid "Write reference…"
+#~ msgstr "Escribe la referencia…"
+
+#~ msgid "Testimonial"
+#~ msgstr "Testimonio"
+
+#~ msgid "Present your customers thoughts of your products and/or services."
+#~ msgstr ""
+#~ "Muestra la opinión de tus clientes acerca de tus productos y/o servicios."
+
+#~ msgid "On scroll animation"
+#~ msgstr "Animación en desplazamiento"
+
+#~ msgid "None"
+#~ msgstr "Ninguna"
+
+#~ msgid "Bounce"
+#~ msgstr "Rebote"
+
+#~ msgid "Flash"
+#~ msgstr "Destello"
+
+#~ msgid "Pulse"
+#~ msgstr "Pulso"
+
+#~ msgid "Rubber band"
+#~ msgstr "Banda elástica"
+
+#~ msgid "Shake"
+#~ msgstr "Sacudida"
+
+#~ msgid "Head shake"
+#~ msgstr "Sacudida de cabeza"
+
+#~ msgid "Swing"
+#~ msgstr "Balanceo"
+
+#~ msgid "Ta-da"
+#~ msgstr "Ta-ran"
+
+#~ msgid "Wobble"
+#~ msgstr "Tambaleo"
+
+#~ msgid "Jello"
+#~ msgstr "Gelatina"
+
+#~ msgid "Heartbeat"
+#~ msgstr "Latido"
+
+#~ msgid "Hinge"
+#~ msgstr "Bisagra"
+
+#~ msgid "Jack in the box"
+#~ msgstr "Caja sorpresa"
+
+#~ msgid "Bounce in"
+#~ msgstr "Entrar rebotando"
+
+#, fuzzy
+#~| msgid "Fade"
+#~ msgid "Fade in"
+#~ msgstr "Desvanecer"
+
+#, fuzzy
+#~| msgid "Fade"
+#~ msgid "Fade out"
+#~ msgstr "Desvanecer"
+
+#, fuzzy
+#~| msgid "Flip"
+#~ msgid "Flip in X"
+#~ msgstr "Voltear"
+
+#, fuzzy
+#~| msgid "Flip"
+#~ msgid "Flip in Y"
+#~ msgstr "Voltear"
+
+#, fuzzy
+#~| msgid "Hide icon"
+#~ msgid "Slide in down"
+#~ msgstr "Ocultar ícono"
+
+#, fuzzy
+#~| msgid "Hide title"
+#~ msgid "Slide in left"
+#~ msgstr "Ocultar título"
+
+#, fuzzy
+#~| msgid "Hide content"
+#~ msgid "Slide out left"
+#~ msgstr "Ocultar contenido"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgid "Zoom in"
+#~ msgstr "Zoom"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgid "Zoom out"
+#~ msgstr "Zoom"
+
+#~ msgid "Duration"
+#~ msgstr "Duración"
+
+#~ msgid "Default"
+#~ msgstr "Por defecto"
+
+#~ msgid "500 ms"
+#~ msgstr "500 ms"
+
+#~ msgid "800 ms"
+#~ msgstr "800 ms"
+
+#~ msgid "2000 ms"
+#~ msgstr "2000 ms"
+
+#~ msgid "3000 ms"
+#~ msgstr "3000 ms"
+
+#~ msgid "Animation"
+#~ msgstr "Animación"
+
+#~ msgid ""
+#~ "The single unit that works as the main structural component for the "
+#~ "slider block."
+#~ msgstr ""
+#~ "La unidad única que funciona como el componente estructural principal "
+#~ "para el bloque deslizador."
+
+#~ msgid "Slides"
+#~ msgstr "Diapositivas"
+
+#~ msgid "Slides per view"
+#~ msgstr "Diapositivas por vista"
+
+#~ msgid "Slider"
+#~ msgstr "Deslizador"
+
+#~ msgid ""
+#~ "Display any blocks of your choosing separated in multiple slides, and "
+#~ "sequentially shown in a sliding motion."
+#~ msgstr ""
+#~ "Muestra cualquier bloque de tu elección separados en múltiples "
+#~ "diapositivas, y mostrados secuencialmente en un movimiento deslizante."
+
+#~ msgid "Distribute left"
+#~ msgstr "Distribuir a la izquierda"
+
+#~ msgid "Distribute center"
+#~ msgstr "Distribuir al centro"
+
+#~ msgid "Distribute right"
+#~ msgstr "Distribuir a la derecha"
+
+#~ msgid "Distribute full"
+#~ msgstr "Distribuir de lado a lado"
+
+#~ msgid "Change distribution"
+#~ msgstr "Cambiar distribución"
+
+#~ msgid "Link target"
+#~ msgstr "Destino del enlace"
+
+#~ msgid "Opacity"
+#~ msgstr "Opacidad"
+
+#~ msgid "Add a heading…"
+#~ msgstr "Añadir encabezado…"
+
+#~ msgid "Add a paragraph…"
+#~ msgstr "Añadir párrafo…"
+
+#~ msgid "Select a category to include…"
+#~ msgstr "Elegir una categoría para incluir…"
+
+#~ msgid "Select a category to exclude…"
+#~ msgstr "Elegir una categoría para excluir…"
+
+#~ msgid "Text"
+#~ msgstr "Texto"
+
+#~ msgid "Call to action"
+#~ msgstr "Llamada a la acción"
+
+#~ msgid "Heading Level"
+#~ msgstr "Nivel de encabezado"
+
+#~ msgid "Popup content"
+#~ msgstr "Contenido emergente"
+
+#~ msgid "Tab Panel"
+#~ msgstr "Panel de Pestaña"
+
+#, fuzzy
+#~| msgid "Slide"
+#~ msgid "Slide in up"
+#~ msgstr "Deslizar"
+
+#~ msgid "Heading %d"
+#~ msgstr "Encabezado %d"
+
+#~ msgid "Change heading level"
+#~ msgstr "Cambiar nivel de encabezado"
+
+#~ msgid "Order by"
+#~ msgstr "Ordenar por"
+
+#~ msgid "Newest to oldest"
+#~ msgstr "Más reciente a más antiguo"
+
+#~ msgid "Oldest to newest"
+#~ msgstr "Más antiguo a más reciente"
+
+#~ msgid "A → Z"
+#~ msgstr "A → Z"
+
+#~ msgid "Z → A"
+#~ msgstr "Z → A"
+
+#~ msgid "Small screens"
+#~ msgstr "Pantallas pequeñas"
+
+#~ msgid "Medium screens"
+#~ msgstr "Pantallas medias"
+
+#~ msgid "Large screens"
+#~ msgstr "Pantallas grandes"
+
+#~ msgid "Placeholder image"
+#~ msgstr "Imagen de referencia"
+
+#~ msgid "Post titles"
+#~ msgstr "Títulos de entradas"
+
+#~ msgid "Post title"
+#~ msgstr "Títulos de entrada"
+
+#~ msgid "Type to start searching…"
+#~ msgstr "Escribe para iniciar la búsqueda…"
+
+#~ msgid "Display media "
+#~ msgstr "Mostrar multimedia"
+
+#~ msgid "Hide media "
+#~ msgstr "Ocultar multimedia"
+
+#~ msgid "Align Center"
+#~ msgstr "Alinear al centro"
+
+#~ msgid "Align Space Evenly"
+#~ msgstr "Alinear espacio uniforme"
+
+#~ msgid "Align Space Around"
+#~ msgstr "Alinear espacio alrededor"
+
+#~ msgid "Align Space Between"
+#~ msgstr "Alinear espacio en medio"
+
+#~ msgid "Button icons size"
+#~ msgstr "Tamaño de ícono de botones"
+
+#~ msgid "Icon Size"
+#~ msgstr "Tamaño de ícono"
+
+#~ msgid "Icon Color"
+#~ msgstr "Color de ícono"

@@ -1,0 +1,100 @@
+/**
+ * Slide Block Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+$default-class-name: "radiofueguina-block-frontpage-row";
+
+.radiofueguina-block-frontpage-row {
+	& > .block-editor-inner-blocks > .block-editor-block-list__layout {
+		& > .fleximple-block-post + .fleximple-block-post {
+			margin-top: rem(20px) !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 46.1875em) {
+	.radiofueguina-block-frontpage-row > .block-editor-inner-blocks > .block-editor-block-list__layout {
+		& > .wp-block:not(.block-list-appender) {
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 46.1875em) {
+	.radiofueguina-block-frontpage-row > .block-editor-inner-blocks > .block-editor-block-list__layout {
+		& > * + * {
+			margin-top: rem(20px);
+		}
+	}
+}
+
+@media only screen and (min-width: 46.25em) {
+	.radiofueguina-block-frontpage-row {
+		display: inherit !important;
+
+		& > .block-editor-inner-blocks > .block-editor-block-list__layout {
+			display: flex;
+			height: 100%;
+
+			.block-list-appender {
+				flex-grow: 0;
+			}
+
+			& > .wp-block:not(.block-list-appender) {
+				flex: 1;
+				margin: 0;
+			}
+
+			& > .wp-block + .wp-block:not(.block-list-appender),
+			& > .components-placeholder + .wp-block:not(.block-list-appender),
+			& > .wp-block + .components-placeholder {
+				margin-left: rem(20px);
+			}
+
+			& > .fleximple-block-post + .fleximple-block-post {
+				margin-top: 0 !important;
+			}
+		}
+
+		&.is-two-halves > .block-editor-inner-blocks > .block-editor-block-list__layout {
+			& > .wp-block:not(.block-list-appender),
+			& > .components-placeholder {
+				flex: 0 1 calc((100% - 20px) / 2);
+			}
+		}
+
+		&.is-two-and-one-thirds > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:nth-child(2):not(.block-list-appender) {
+			flex: 0 1 calc((100% - 40px) / 3);
+		}
+
+		&.is-one-and-two-thirds > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:first-child:not(.block-list-appender) {
+			flex: 0 1 calc((100% - 40px) / 3);
+		}
+
+		&.is-two-and-one-thirds > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:nth-child(2):not(.block-list-appender),
+		&.is-one-and-two-thirds > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block:first-child:not(.block-list-appender) {
+			& > .block-editor-inner-blocks > .block-editor-block-list__layout > #{$default-class-name} {
+				flex: 0 1 rem(76px);
+
+				&:first-child {
+					flex: 2;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 66.25em) {
+	.radiofueguina-block-frontpage-row {
+		& > .block-editor-inner-blocks > .block-editor-block-list__layout {
+			& > .wp-block + .wp-block:not(.block-list-appender),
+			& > .components-placeholder + .wp-block:not(.block-list-appender),
+			& > .wp-block + .components-placeholder {
+				margin-left: rem(20px);
+			}
+		}
+	}
+}

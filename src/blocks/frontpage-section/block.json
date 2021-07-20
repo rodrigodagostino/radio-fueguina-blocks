@@ -1,0 +1,66 @@
+{
+	"apiVersion": 2,
+	"name": "radiofueguina-blocks/frontpage-section",
+	"category": "radiofueguina-blocks",
+	"attributes": {
+		"mediaId": {
+			"type": "number",
+			"default": null
+		},
+		"mediaUrl": {
+			"type": "object",
+			"default": {
+				"small": null,
+				"medium": null,
+				"large": null
+			}
+		},
+		"focalPoint": {
+			"type": "object",
+			"default": {
+				"small": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"medium": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"large": {
+					"x": 0.5,
+					"y": 0.5
+				}
+			}
+		},
+		"backgroundSize": {
+			"type": "object",
+			"default": {
+				"small": "cover",
+				"medium": "cover",
+				"large": "cover"
+			}
+		},
+		"backgroundRepeat": {
+			"type": "object",
+			"default": {
+				"small": "no-repeat",
+				"medium": "no-repeat",
+				"large": "no-repeat"
+			}
+		},
+		"backgroundFixed": {
+			"type": "boolean",
+			"default": false
+		},
+		"overlayColor": {
+			"type": "string"
+		},
+		"customOverlayColor": {
+			"type": "string"
+		},
+		"overlayOpacity": {
+			"type": "number",
+			"default": 30
+		}
+	}
+}

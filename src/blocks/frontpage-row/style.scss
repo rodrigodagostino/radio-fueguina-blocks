@@ -1,0 +1,52 @@
+/**
+ * Slider Block Styles
+ *
+ * CSS for both frontend + backend.
+ */
+
+$default-class-name: "radiofueguina-block-frontpage-row";
+
+@media only screen and (max-width: 46.1875em) {
+	.radiofueguina-block-frontpage-row {
+		& > * + * {
+			margin-top: rem(20px);
+		}
+	}
+}
+
+@media only screen and (min-width: 46.25em) {
+	.radiofueguina-block-frontpage-row {
+		display: flex;
+
+		& > * {
+			flex: 1;
+		}
+
+		& > * + * {
+			margin-left: rem(20px);
+		}
+
+		&.is-two-halves > .radiofueguina-block-frontpage-column {
+			flex: 0 1 calc((100% - 20px) / 2);
+		}
+
+		&.is-two-and-one-thirds > .radiofueguina-block-frontpage-column:nth-child(2) {
+			flex: 0 1 calc((100% - 40px) / 3);
+		}
+
+		&.is-one-and-two-thirds > .radiofueguina-block-frontpage-column:first-child {
+			flex: 0 1 calc((100% - 40px) / 3);
+		}
+
+		&.is-two-and-one-thirds > .radiofueguina-block-frontpage-column:nth-child(2),
+		&.is-one-and-two-thirds > .radiofueguina-block-frontpage-column:first-child {
+			& > .fleximple-block-post {
+				flex: 0 1 rem(76px);
+
+				&:first-child {
+					flex: 2;
+				}
+			}
+		}
+	}
+}
