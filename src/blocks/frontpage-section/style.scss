@@ -116,7 +116,7 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 
 		header.radiofueguina-block-frontpage-column {
 			.#{$default-class-name}__heading {
-				flex-basis: #{math.div(220 * 100, 1260)}#{"%"};
+				flex-basis: #{math.div(240 * 100, 1020)}#{"%"};
 			}
 		}
 
