@@ -22,30 +22,30 @@ const { name } = metadata
 export { metadata, name }
 
 export const settings = {
-	title: __( 'Billboard', 'radiofueguinablocks' ),
-	description: __(
-		'A single row within a front-page section or column block.',
-		'radiofueguinablocks',
-	),
-	icon,
-	keywords: [
-		/* translators: block keyword */
-		__( 'Billboard', 'radiofueguinablocks' ),
-		/* translators: block keyword */
-		__( 'Radio Fueguina block', 'radiofueguinablocks' ),
-	],
+  title: __( 'Billboard', 'radiofueguinablocks' ),
+  description: __(
+    'A single row within a front-page section or column block.',
+    'radiofueguinablocks',
+  ),
+  icon,
+  keywords: [
+    /* translators: block keyword */
+    __( 'Billboard', 'radiofueguinablocks' ),
+    /* translators: block keyword */
+    __( 'Radio Fueguina block', 'radiofueguinablocks' ),
+  ],
 
-	edit,
-	save,
+  edit,
+  save,
 }
 
 // Provide a custom block class
 function setBlockCustomClassName( className, blockName ) {
-	return blockName === name ? 'radiofueguina-block-billboard' : className
+  return blockName === name ? 'radiofueguina-block-billboard' : className
 }
 
 wp.hooks.addFilter(
-	'blocks.getBlockDefaultClassName',
-	'radiofueguina-blocks/radiofueguina-block-billboard',
-	setBlockCustomClassName,
+  'blocks.getBlockDefaultClassName',
+  'radiofueguina-blocks/radiofueguina-block-billboard',
+  setBlockCustomClassName,
 )

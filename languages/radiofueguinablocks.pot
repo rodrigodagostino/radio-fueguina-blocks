@@ -1,5 +1,5 @@
 # Copyright (C) 2021 Rodrigo D’Agostino
-# This file is distributed under the same license as the Radio Fueguina Blocks plugin.
+# This file is distributed under the GPL2+.
 msgid ""
 msgstr ""
 "Project-Id-Version: Radio Fueguina Blocks 1.0.0\n"
@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-04-18T19:29:29+02:00\n"
+"POT-Creation-Date: 2021-11-27T21:25:57+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: radiofueguinablocks\n"
 
 #. Plugin Name of the plugin
@@ -35,183 +35,176 @@ msgstr ""
 msgid "https://www.rodrigodagostino.com/"
 msgstr ""
 
-#. translators: content placeholder
 #. translators: block keyword
-#: dist/index.js:3
-#: dist/index.js:5
+#: dist/index.js:2
 #: src/blocks/billboard/index.js:25
 #: src/blocks/billboard/index.js:33
 msgid "Billboard"
 msgstr ""
 
-#: dist/index.js:3
-#: dist/index.js:11
+#: dist/index.js:2
 #: src/blocks/billboard/index.js:26
 #: src/blocks/frontpage-row/index.js:26
 msgid "A single row within a front-page section or column block."
 msgstr ""
 
 #. translators: block keyword
-#: dist/index.js:7
-#: dist/index.js:11
+#: dist/index.js:2
 #: src/blocks/billboard/index.js:35
 #: src/blocks/frontpage-section/index.js:36
 msgid "Radio Fueguina block"
 msgstr ""
 
-#. translators: block keyword
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Background"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Image"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Replace image"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Choose background image"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Remove image"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Size"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Auto"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Cover"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Contain"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Repeat"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Repeat X"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Repeat Y"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "No repeat"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Fixed background"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Overlay"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Overlay opacity"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Select a layout to start with."
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 #: src/blocks/frontpage-section/variations.js:21
 msgid "Layout 1"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 #: src/blocks/frontpage-section/variations.js:34
-#: src/blocks/frontpage-section/variations.js:156
-#: src/blocks/frontpage-section/variations.js:259
-#: src/blocks/frontpage-section/variations.js:345
-#: src/blocks/frontpage-section/variations.js:428
+#: src/blocks/frontpage-section/variations.js:181
+#: src/blocks/frontpage-section/variations.js:310
+#: src/blocks/frontpage-section/variations.js:434
+#: src/blocks/frontpage-section/variations.js:535
 msgid "Section Title"
 msgstr ""
 
-#: dist/index.js:7
-#: src/blocks/frontpage-section/variations.js:144
+#: dist/index.js:2
+#: src/blocks/frontpage-section/variations.js:169
 msgid "Layout 2"
 msgstr ""
 
-#: dist/index.js:7
-#: src/blocks/frontpage-section/variations.js:247
+#: dist/index.js:2
+#: src/blocks/frontpage-section/variations.js:298
 msgid "Layout 3"
 msgstr ""
 
-#: dist/index.js:7
-#: src/blocks/frontpage-section/variations.js:333
+#: dist/index.js:2
+#: src/blocks/frontpage-section/variations.js:422
 msgid "Layout 4"
 msgstr ""
 
-#: dist/index.js:7
-#: src/blocks/frontpage-section/variations.js:416
+#: dist/index.js:2
+#: src/blocks/frontpage-section/variations.js:523
 msgid "Layout 4 (automatic)"
 msgstr ""
 
 #. translators: block keyword
-#: dist/index.js:7
-#: dist/index.js:9
+#: dist/index.js:2
 #: src/blocks/frontpage-section/index.js:26
 #: src/blocks/frontpage-section/index.js:34
 msgid "Front-Page Section"
 msgstr ""
 
-#: dist/index.js:7
+#: dist/index.js:2
 #: src/blocks/frontpage-section/index.js:27
 msgid "The main structural component to display content in the front page."
 msgstr ""
 
-#. translators: block keyword
-#: dist/index.js:11
+#: dist/index.js:2
 #: src/blocks/frontpage-column/index.js:25
 msgid "Front-Page Column"
 msgstr ""
 
-#: dist/index.js:11
+#: dist/index.js:2
 #: src/blocks/frontpage-column/index.js:26
 msgid "A single column within a front-page section or row block."
 msgstr ""
 
-#: dist/index.js:11
+#: dist/index.js:2
 #: src/blocks/frontpage-row/index.js:25
 msgid "Front-Page Row"
 msgstr ""
 
-#: dist/index.js:11
-#: src/block-styles/index.js:30
+#: dist/index.js:2
+#: src/block-styles/index.js:25
 msgid "Level 1"
 msgstr ""
 
-#: dist/index.js:11
-#: src/block-styles/index.js:34
+#: dist/index.js:2
+#: src/block-styles/index.js:29
 msgid "Level 1 (alternate)"
 msgstr ""
 
-#: dist/index.js:11
-#: src/block-styles/index.js:38
+#: dist/index.js:2
+#: src/block-styles/index.js:33
 msgid "Level 2"
 msgstr ""
 
-#: dist/index.js:11
-#: src/block-styles/index.js:42
+#: dist/index.js:2
+#: src/block-styles/index.js:37
 msgid "Level 3"
 msgstr ""
 
-#: dist/index.js:11
-#: src/block-styles/index.js:46
+#: dist/index.js:2
+#: src/block-styles/index.js:41
 msgid "Level 4"
 msgstr ""

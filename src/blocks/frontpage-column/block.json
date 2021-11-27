@@ -1,11 +1,11 @@
 {
-	"apiVersion": 2,
-	"name": "radiofueguina-blocks/frontpage-column",
-	"category": "radiofueguina-blocks",
-	"attributes": {
-		"sectionTag": {
-			"type": "string",
-			"default": "div"
-		}
-	}
+  "apiVersion": 2,
+  "name": "radiofueguina-blocks/frontpage-column",
+  "category": "radiofueguina-blocks",
+  "attributes": {
+    "sectionTag": {
+      "type": "string",
+      "default": "div"
+    }
+  }
 }

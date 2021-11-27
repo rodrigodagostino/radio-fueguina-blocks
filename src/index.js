@@ -2,8 +2,8 @@
  * WordPress dependencies
  */
 import {
-	registerBlockType,
-	unstable__bootstrapServerSideBlockDefinitions, // eslint-disable-line camelcase
+  registerBlockType,
+  unstable__bootstrapServerSideBlockDefinitions, // eslint-disable-line camelcase
 } from '@wordpress/blocks'
 
 /**
@@ -15,21 +15,21 @@ import * as frontpageSectionColumn from './blocks/frontpage-column'
 import * as frontpageSectionRow from './blocks/frontpage-row'
 
 export const registerRadioFueguinaBlocks = () => {
-	[
-		billboard,
-		frontpageSection,
-		frontpageSectionColumn,
-		frontpageSectionRow,
-	].forEach( ( block ) => {
-		if ( ! block ) {
-			return
-		}
-		const { metadata, settings, name } = block
-		if ( metadata ) {
-			unstable__bootstrapServerSideBlockDefinitions( { [ name ]: metadata } )
-		}
-		registerBlockType( name, settings )
-	} )
+  [
+    billboard,
+    frontpageSection,
+    frontpageSectionColumn,
+    frontpageSectionRow,
+  ].forEach( block => {
+    if ( !block ) {
+      return
+    }
+    const { metadata, settings, name } = block
+    if ( metadata ) {
+      unstable__bootstrapServerSideBlockDefinitions({ [ name ]: metadata })
+    }
+    registerBlockType( name, settings )
+  })
 }
 
 registerRadioFueguinaBlocks()

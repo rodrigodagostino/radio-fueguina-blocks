@@ -16,7 +16,7 @@
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+  exit;
 }
 
 define( 'RADIOFUEGUINABLOCKS_ID', 'radiofueguinablocks' );

@@ -8,147 +8,150 @@
 $default-class-name: "radiofueguina-block-frontpage-section";
 
 .radiofueguina-block-frontpage-section {
-	padding: rem(16px);
-	position: relative;
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	max-width: var(--container__max-width--small, 480px);
+  padding: rem(16px);
+  position: relative;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  max-width: var(--container__max-width--small, 480px);
 
-	& + & {
-		border-top: 1px solid var(--gray-100);
-	}
+  & + & {
+    border-top: 1px solid var(--gray-100);
+  }
 
-	.radiofueguina-block-frontpage-column:empty {
-		margin-top: 0;
-		height: 0;
-	}
+  .radiofueguina-block-frontpage-column:empty {
+    margin-top: 0;
+    height: 0;
+  }
 
-	header.radiofueguina-block-frontpage-column {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: baseline;
-		z-index: 10;
+  header.radiofueguina-block-frontpage-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 10;
 
-		.#{$default-class-name}__heading {
-			font-size: rem(22px);
-			font-weight: 900;
-		}
-	}
+    .#{$default-class-name}__heading {
+      font-size: rem(22px);
+      font-weight: 900;
+    }
+  }
 
-	header.radiofueguina-block-frontpage-column + main.radiofueguina-block-frontpage-column {
-		margin-top: rem(12px);
-	}
+  header.radiofueguina-block-frontpage-column
+    + main.radiofueguina-block-frontpage-column {
+    margin-top: rem(12px);
+  }
 
-	main.radiofueguina-block-frontpage-column {
-		z-index: 10;
+  main.radiofueguina-block-frontpage-column {
+    z-index: 10;
 
-		& > .radiofueguina-block-frontpage-row {
-			flex-direction: column;
-		}
-	}
+    & > .radiofueguina-block-frontpage-row {
+      flex-direction: column;
+    }
+  }
 
-	&.background-attachment-fixed {
-		background-attachment: fixed;
-	}
+  &.background-attachment-fixed {
+    background-attachment: fixed;
+  }
 
-	&__overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 0;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
 
-		$steps: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+    $steps: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85,
+      90, 95, 100;
 
-		@each $step in $steps {
-			&.opacity-#{ $step } {
-				opacity: math.div($step, 100);
-			}
-		}
-	}
+    @each $step in $steps {
+      &.opacity-#{ $step } {
+        opacity: math.div($step, 100);
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 46.25em) {
-	.radiofueguina-block-frontpage-section {
-		padding: rem(20px);
-		max-width: var(--container__max-width--medium, 740px);
+  .radiofueguina-block-frontpage-section {
+    padding: rem(20px);
+    max-width: var(--container__max-width--medium, 740px);
 
-		header.radiofueguina-block-frontpage-column {
-			justify-content: initial;
+    header.radiofueguina-block-frontpage-column {
+      justify-content: initial;
 
-			.#{$default-class-name}__heading {
-				font-size: rem(24px);
-				flex-basis: calc(((100% - 40px) / 3) + 20px);
-			}
-		}
+      .#{$default-class-name}__heading {
+        font-size: rem(24px);
+        flex-basis: calc(((100% - 40px) / 3) + 20px);
+      }
+    }
 
-		main.radiofueguina-block-frontpage-column {
-			& > .radiofueguina-block-frontpage-row {
-				& > .radiofueguina-block-frontpage-column:first-child {
-					flex-basis: #{math.div(700 * 100, 1020)}#{"%"};
-				}
+    main.radiofueguina-block-frontpage-column {
+      & > .radiofueguina-block-frontpage-row {
+        & > .radiofueguina-block-frontpage-column:first-child {
+          flex-basis: #{math.div(700 * 100, 1020)}#{"%"};
+        }
 
-				& > .radiofueguina-block-frontpage-column:nth-child(2) {
-					flex-basis: #{math.div(300 * 100, 1020)}#{"%"};
+        & > .radiofueguina-block-frontpage-column:nth-child(2) {
+          flex-basis: #{math.div(300 * 100, 1020)}#{"%"};
 
-					& > * {
-						margin-bottom: 0;
-					}
+          & > * {
+            margin-bottom: 0;
+          }
 
-					& > * + * {
-						margin-top: rem(20px);
-					}
-				}
-			}
-		}
+          & > * + * {
+            margin-top: rem(20px);
+          }
+        }
+      }
+    }
 
-		.wp-block-image {
-			margin-bottom: 0;
-		}
-	}
+    .wp-block-image {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: 66.25em) {
-	.radiofueguina-block-frontpage-section {
-		max-width: var(--container__max-width--large, 1060px);
+  .radiofueguina-block-frontpage-section {
+    max-width: var(--container__max-width--large, 1060px);
 
-		header.radiofueguina-block-frontpage-column {
-			.#{$default-class-name}__heading {
-				flex-basis: #{math.div(240 * 100, 1020)}#{"%"};
-			}
-		}
+    header.radiofueguina-block-frontpage-column {
+      .#{$default-class-name}__heading {
+        flex-basis: #{math.div(240 * 100, 1020)}#{"%"};
+      }
+    }
 
-		main.radiofueguina-block-frontpage-column {
-			& > .radiofueguina-block-frontpage-row {
-				flex-direction: row;
-			}
-		}
-	}
+    main.radiofueguina-block-frontpage-column {
+      & > .radiofueguina-block-frontpage-row {
+        flex-direction: row;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 81.25em) {
-	.radiofueguina-block-frontpage-section {
-		display: flex;
-		max-width: var(--container__max-width--xlarge, 1300px);
+  .radiofueguina-block-frontpage-section {
+    display: flex;
+    max-width: var(--container__max-width--xlarge, 1300px);
 
-		header.radiofueguina-block-frontpage-column {
-			flex-basis: #{math.div(220 * 100, 1260)}#{"%"};
-			flex-direction: column;
+    header.radiofueguina-block-frontpage-column {
+      flex-basis: #{math.div(220 * 100, 1260)}#{"%"};
+      flex-direction: column;
 
-			.#{$default-class-name}__heading {
-				flex-basis: initial;
-			}
-		}
+      .#{$default-class-name}__heading {
+        flex-basis: initial;
+      }
+    }
 
-		main.radiofueguina-block-frontpage-column {
-			flex-basis: #{math.div(1020 * 100, 1260)}#{"%"};
-		}
+    main.radiofueguina-block-frontpage-column {
+      flex-basis: #{math.div(1020 * 100, 1260)}#{"%"};
+    }
 
-		header.radiofueguina-block-frontpage-column + main.radiofueguina-block-frontpage-column {
-			margin-top: 0;
-			margin-left: rem(20px);
-		}
-	}
+    header.radiofueguina-block-frontpage-column
+      + main.radiofueguina-block-frontpage-column {
+      margin-top: 0;
+      margin-left: rem(20px);
+    }
+  }
 }

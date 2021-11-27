@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: Radio Fueguina Blocks 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/radio-fueguina-"
 "blocks\n"
-"POT-Creation-Date: 2021-04-18T19:29:29+02:00\n"
-"PO-Revision-Date: 2021-04-18 14:31-0300\n"
+"POT-Creation-Date: 2021-11-27T21:25:57+01:00\n"
+"PO-Revision-Date: 2021-11-27 17:26-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Plugin Name of the plugin
@@ -38,164 +38,161 @@ msgstr ""
 msgid "https://www.rodrigodagostino.com/"
 msgstr ""
 
-#. translators: content placeholder
 #. translators: block keyword
-#: dist/index.js:3 dist/index.js:5 src/blocks/billboard/index.js:25
+#: dist/index.js:2 src/blocks/billboard/index.js:25
 #: src/blocks/billboard/index.js:33
 msgid "Billboard"
 msgstr "Cartelera"
 
-#: dist/index.js:3 dist/index.js:11 src/blocks/billboard/index.js:26
+#: dist/index.js:2 src/blocks/billboard/index.js:26
 #: src/blocks/frontpage-row/index.js:26
 msgid "A single row within a front-page section or column block."
 msgstr ""
 "Una fila simple dentro de un bloque de sección o de columna de portada."
 
 #. translators: block keyword
-#: dist/index.js:7 dist/index.js:11 src/blocks/billboard/index.js:35
+#: dist/index.js:2 src/blocks/billboard/index.js:35
 #: src/blocks/frontpage-section/index.js:36
 msgid "Radio Fueguina block"
 msgstr "Bloque de Radio Fueguina"
 
-#. translators: block keyword
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Background"
 msgstr "Fondo"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Image"
 msgstr "Imagen"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Replace image"
 msgstr "Reemplazar imagen"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Choose background image"
 msgstr "Elegir imagen de fondo"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Remove image"
 msgstr "Quitar imagen"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Size"
 msgstr "Tamaño"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Auto"
 msgstr "Automático"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Cover"
 msgstr "Cubrir"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Contain"
 msgstr "Contener"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Repeat"
 msgstr "Repetir"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Repeat X"
 msgstr "Repetir X"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Repeat Y"
 msgstr "Repetir Y"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "No repeat"
 msgstr "No repetir"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Fixed background"
 msgstr "Fondo fijo"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Overlay"
 msgstr "Capa superpuesta"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Overlay opacity"
 msgstr "Opacidad de capa superpuesta"
 
-#: dist/index.js:7
+#: dist/index.js:2
 msgid "Select a layout to start with."
 msgstr "Elige un diseño con el cual comenzar."
 
-#: dist/index.js:7 src/blocks/frontpage-section/variations.js:21
+#: dist/index.js:2 src/blocks/frontpage-section/variations.js:21
 msgid "Layout 1"
 msgstr "Diseño 1"
 
-#: dist/index.js:7 src/blocks/frontpage-section/variations.js:34
-#: src/blocks/frontpage-section/variations.js:156
-#: src/blocks/frontpage-section/variations.js:259
-#: src/blocks/frontpage-section/variations.js:345
-#: src/blocks/frontpage-section/variations.js:428
+#: dist/index.js:2 src/blocks/frontpage-section/variations.js:34
+#: src/blocks/frontpage-section/variations.js:181
+#: src/blocks/frontpage-section/variations.js:310
+#: src/blocks/frontpage-section/variations.js:434
+#: src/blocks/frontpage-section/variations.js:535
 msgid "Section Title"
 msgstr "Título de sección"
 
-#: dist/index.js:7 src/blocks/frontpage-section/variations.js:144
+#: dist/index.js:2 src/blocks/frontpage-section/variations.js:169
 msgid "Layout 2"
 msgstr "Diseño 2"
 
-#: dist/index.js:7 src/blocks/frontpage-section/variations.js:247
+#: dist/index.js:2 src/blocks/frontpage-section/variations.js:298
 msgid "Layout 3"
 msgstr "Diseño 3"
 
-#: dist/index.js:7 src/blocks/frontpage-section/variations.js:333
+#: dist/index.js:2 src/blocks/frontpage-section/variations.js:422
 msgid "Layout 4"
 msgstr "Diseño 4"
 
-#: dist/index.js:7 src/blocks/frontpage-section/variations.js:416
+#: dist/index.js:2 src/blocks/frontpage-section/variations.js:523
 msgid "Layout 4 (automatic)"
 msgstr "Diseño 4 (automático)"
 
 #. translators: block keyword
-#: dist/index.js:7 dist/index.js:9 src/blocks/frontpage-section/index.js:26
+#: dist/index.js:2 src/blocks/frontpage-section/index.js:26
 #: src/blocks/frontpage-section/index.js:34
 msgid "Front-Page Section"
 msgstr "Sección de portada"
 
-#: dist/index.js:7 src/blocks/frontpage-section/index.js:27
+#: dist/index.js:2 src/blocks/frontpage-section/index.js:27
 msgid "The main structural component to display content in the front page."
 msgstr ""
 "El componente estructural principal para mostrar contenido en la portada."
 
-#. translators: block keyword
-#: dist/index.js:11 src/blocks/frontpage-column/index.js:25
+#: dist/index.js:2 src/blocks/frontpage-column/index.js:25
 msgid "Front-Page Column"
 msgstr "Columna de portada"
 
-#: dist/index.js:11 src/blocks/frontpage-column/index.js:26
+#: dist/index.js:2 src/blocks/frontpage-column/index.js:26
 msgid "A single column within a front-page section or row block."
 msgstr ""
 "Una columna simple dentro de un bloque de sección o de fila de portada."
 
-#: dist/index.js:11 src/blocks/frontpage-row/index.js:25
+#: dist/index.js:2 src/blocks/frontpage-row/index.js:25
 msgid "Front-Page Row"
 msgstr "Fila de portada"
 
-#: dist/index.js:11 src/block-styles/index.js:30
+#: dist/index.js:2 src/block-styles/index.js:25
 msgid "Level 1"
 msgstr "Nivel 1"
 
-#: dist/index.js:11 src/block-styles/index.js:34
+#: dist/index.js:2 src/block-styles/index.js:29
 msgid "Level 1 (alternate)"
 msgstr "Nivel 1 (alternativo)"
 
-#: dist/index.js:11 src/block-styles/index.js:38
+#: dist/index.js:2 src/block-styles/index.js:33
 msgid "Level 2"
 msgstr "Nivel 2"
 
-#: dist/index.js:11 src/block-styles/index.js:42
+#: dist/index.js:2 src/block-styles/index.js:37
 msgid "Level 3"
 msgstr "Nivel 3"
 
-#: dist/index.js:11 src/block-styles/index.js:46
+#: dist/index.js:2 src/block-styles/index.js:41
 msgid "Level 4"
 msgstr "Nivel 4"
 

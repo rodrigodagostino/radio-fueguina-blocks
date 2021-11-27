@@ -26,32 +26,32 @@
  * See editor-color-palette in functions.php
  */
 $colors: (
-	"primary-lighter": #4da6ff,
-	"primary-light": #2693ff,
-	"primary": #0080ff,
-	"primary-dark": #006dd9,
-	"primary-darker": #005ab3,
-	"accent-lighter": #ff694d,
-	"accent-light": #ff4826,
-	"accent": #ff2800,
-	"accent-dark": #d92200,
-	"accent-darker": #b31c00,
-	"gray-lighter": #e1e1e6,
-	"gray-light": #a4a6b5,
-	"gray": #686a84,
-	"gray-dark": #494a5c,
-	"gray-darker": #2a2a35,
-	"white": #f3f3f5,
-	"black": #15151a,
+  "primary-lighter": #4da6ff,
+  "primary-light": #2693ff,
+  "primary": #0080ff,
+  "primary-dark": #006dd9,
+  "primary-darker": #005ab3,
+  "accent-lighter": #ff694d,
+  "accent-light": #ff4826,
+  "accent": #ff2800,
+  "accent-dark": #d92200,
+  "accent-darker": #b31c00,
+  "gray-lighter": #e1e1e6,
+  "gray-light": #a4a6b5,
+  "gray": #686a84,
+  "gray-dark": #494a5c,
+  "gray-darker": #2a2a35,
+  "white": #f3f3f5,
+  "black": #15151a,
 );
 
 @each $name, $color in $colors {
-	.has-#{$name}-color {
-		color: $color;
-	}
+  .has-#{$name}-color {
+    color: $color;
+  }
 
-	.has-#{$name}-background-color {
-		background-color: $color;
-		border-color: $color;
-	}
+  .has-#{$name}-background-color {
+    background-color: $color;
+    border-color: $color;
+  }
 }

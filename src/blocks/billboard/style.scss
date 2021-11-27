@@ -7,35 +7,35 @@
 $default-class-name: "radiofueguina-block-billboard";
 
 .radiofueguina-block-billboard {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: opacity 0.2s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease;
 
-	&:hover {
-		opacity: 0.95;
-	}
+  &:hover {
+    opacity: 0.95;
+  }
 
-	.radiofueguina-block-billboard__overlay {
-		width: 100%;
-		padding: rem(12px);
-		margin: rem(16px) 0;
-	}
+  .radiofueguina-block-billboard__overlay {
+    width: 100%;
+    padding: rem(12px);
+    margin: rem(16px) 0;
+  }
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p {
-		margin: 0;
-		text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+  }
 
-	a {
-		color: inherit !important;
-		outline-color: white;
-	}
+  a {
+    color: inherit !important;
+    outline-color: white;
+  }
 }
