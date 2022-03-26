@@ -65,7 +65,7 @@ function FrontpageSectionSave({ attributes: {
     <section { ...useBlockProps.save({ className: classes }) }>
       { !!mediaId && (
         <style>
-          { mediaId && !!mediaUrl.small && 
+          { mediaId && !!mediaUrl.small &&
 						`.${ defaultClassName }.background-image-id-${ mediaId }--sm {
 							background-image: url('${ mediaUrl.small }');
 						}
@@ -83,7 +83,7 @@ function FrontpageSectionSave({ attributes: {
 							}` : '' }`
           }
 
-          { mediaId && !!mediaUrl.medium && 
+          { mediaId && !!mediaUrl.medium &&
 						`@media only screen and (min-width: ${ fleximpleblocksPluginData.settings.mediumBreakpointValue }px) {
 							${ mediaUrl.medium ?
           `.${ defaultClassName }.background-image-id-${ mediaId }--md {
@@ -104,7 +104,7 @@ function FrontpageSectionSave({ attributes: {
 						}`
           }
 
-          { mediaId && !!mediaUrl.large && 
+          { mediaId && !!mediaUrl.large &&
 						`@media only screen and (min-width: ${ fleximpleblocksPluginData.settings.largeBreakpointValue }px) {
 							${ mediaUrl.large ?
           `.${ defaultClassName }.background-image-id-${ mediaId }--lg {

@@ -14,7 +14,7 @@ import { getColorClassName, InnerBlocks, useBlockProps } from '@wordpress/block-
  */
 import metadata from './block.json'
 import { hexToRGB } from '../../js/utils'
- 
+
 const { name } = metadata
 
 function BillboardSave({

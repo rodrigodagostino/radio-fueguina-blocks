@@ -20,7 +20,7 @@ export const registerRadioFueguinaBlocks = () => {
     frontpageSection,
     frontpageSectionColumn,
     frontpageSectionRow,
-  ].forEach( block => {
+  ].forEach( ( block ) => {
     if ( !block ) {
       return
     }

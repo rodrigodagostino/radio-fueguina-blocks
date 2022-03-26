@@ -49,7 +49,7 @@ function FrontpageColumnEdit({ attributes, setAttributes }) {
                 value: 'footer',
               },
             ] }
-            onChange={ value =>
+            onChange={ ( value ) =>
               setAttributes({ sectionTag: value })
             }
           />

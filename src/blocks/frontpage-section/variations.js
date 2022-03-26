@@ -114,7 +114,7 @@ const variations = [
                         displayExtraArticles: true,
                       } ],
                       [ 'radiofueguina-blocks/frontpage-column', {},
-                        [	
+                        [
                           [ 'fleximple-blocks/post', {
                             className: 'is-style-level-2',
                             imageSize: {
@@ -253,7 +253,7 @@ const variations = [
                         displayExcerpt: false,
                       } ],
                       [ 'radiofueguina-blocks/frontpage-column', {},
-                        [	
+                        [
                           [ 'fleximple-blocks/post', {
                             className: 'is-style-level-4',
                             displayMedia: false,
@@ -349,7 +349,7 @@ const variations = [
                   [ 'radiofueguina-blocks/frontpage-row', { className: 'is-two-halves' },
                     [
                       [ 'radiofueguina-blocks/frontpage-column', {},
-                        [	
+                        [
                           [ 'fleximple-blocks/post', {
                             className: 'is-style-level-3',
                             imageSize: {
@@ -478,7 +478,7 @@ const variations = [
                         displayExcerpt: false,
                       } ],
                       [ 'radiofueguina-blocks/frontpage-column', {},
-                        [	
+                        [
                           [ 'fleximple-blocks/post', {
                             className: 'is-style-level-4',
                             displayMedia: false,

@@ -73,7 +73,7 @@ function Content({
 
   useEffect( () => {
     if ( hasInnerBlocks ) {
-      setTemplate( innerBlocks ) 
+      setTemplate( innerBlocks )
     }
 
     if ( !supportsInnerBlocksPicker() && !supportsBlockVariationPicker() && hasInnerBlocks === false ) {
@@ -150,7 +150,7 @@ function Content({
               <MediaUploadCheck>
                 <MediaUpload
                   id={ `fleximple-blocks-row-media-control-${ instanceId }` }
-                  onSelect={ media => {
+                  onSelect={ ( media ) => {
                     setAttributes({ mediaId: media.id })
                     setResponsiveAttribute(
                       attributes,
@@ -166,7 +166,7 @@ function Content({
                   } }
                   allowedTypes={ ALLOWED_MEDIA_TYPES }
                   value={ mediaId }
-                  render={ ({ open }) => 
+                  render={ ({ open }) =>
                     <>
                       <Button
                         className="button button-large is-button is-default is-large width-full"
@@ -197,12 +197,12 @@ function Content({
 
                       { !!mediaId &&
                       <ResponsiveSettingsTabPanel initialTabName="small">
-                        { tab => 
+                        { ( tab ) =>
                           <>
                             <FocalPointPicker
                               url={ mediaUrl[ tab.name ] }
                               value={ focalPoint[ tab.name ] }
-                              onChange={ value => setResponsiveAttribute(
+                              onChange={ ( value ) => setResponsiveAttribute(
                                 attributes,
                                 setAttributes,
                                 'focalPoint',
@@ -220,7 +220,7 @@ function Content({
                                 { label: __( 'Cover', 'radiofueguinablocks' ), value: 'cover' },
                                 { label: __( 'Contain', 'radiofueguinablocks' ), value: 'contain' },
                               ] }
-                              onChange={ value => setResponsiveAttribute(
+                              onChange={ ( value ) => setResponsiveAttribute(
                                 attributes,
                                 setAttributes,
                                 'backgroundSize',
@@ -239,7 +239,7 @@ function Content({
                                 { label: __( 'Repeat Y', 'radiofueguinablocks' ), value: 'repeat-y' },
                                 { label: __( 'No repeat', 'radiofueguinablocks' ), value: 'no-repeat' },
                               ] }
-                              onChange={ value => setResponsiveAttribute(
+                              onChange={ ( value ) => setResponsiveAttribute(
                                 attributes,
                                 setAttributes,
                                 'backgroundRepeat',
@@ -283,14 +283,14 @@ function Content({
                 max={ 100 }
                 step={ 5 }
                 value={ overlayOpacity }
-                onChange={ value => setAttributes({ overlayOpacity: value }) }
+                onChange={ ( value ) => setAttributes({ overlayOpacity: value }) }
               />
             </>
           </PanelBody>
         </InspectorControls>
 
         <section { ...blockProps }>
-          { !!mediaId && 
+          { !!mediaId &&
           <style>
             { !!mediaId && !!mediaUrl.small && `
               .${ defaultClassName }.background-image-id-${ mediaId }--sm {
@@ -374,7 +374,7 @@ const Placeholder = ({
   defaultVariation,
   variations,
 }) => {
-  const createBlocksFromInnerBlocksTemplate = innerBlocksTemplate => {
+  const createBlocksFromInnerBlocksTemplate = ( innerBlocksTemplate ) => {
     return map( innerBlocksTemplate, ( [ name, attrbts, innrBlcks = [] ] ) => createBlock(
       name,
       attrbts,
@@ -387,7 +387,7 @@ const Placeholder = ({
       setAttributes( nextVariation.attributes )
     }
 
-    const submitButtonText = map( variations, elem => {
+    const submitButtonText = map( variations, ( elem ) => {
       if ( isEqual( elem.innerBlocks, nextVariation.innerBlocks ) ) {
         return elem.submitButtonText
       }
@@ -412,13 +412,13 @@ const Placeholder = ({
         instructions={ __( 'Select a layout to start with.', 'radiofueguinablocks' ) }
         variations={ variations }
         allowSkip
-        onSelect={ nextVariation => blockVariationPickerOnSelect( nextVariation ) }
+        onSelect={ ( nextVariation ) => blockVariationPickerOnSelect( nextVariation ) }
       />
     </section>
   )
 }
 
-const FrontpageSectionEdit = props => {
+const FrontpageSectionEdit = ( props ) => {
   const Component = props.hasInnerBlocks
     ? Content
     : Placeholder
@@ -443,7 +443,7 @@ const applyWithSelect = withSelect( ( select, props ) => {
   }
 })
 
-const applyWithDispatch = withDispatch( dispatch => {
+const applyWithDispatch = withDispatch( ( dispatch ) => {
   const {
     insertBlock,
     replaceInnerBlocks,
