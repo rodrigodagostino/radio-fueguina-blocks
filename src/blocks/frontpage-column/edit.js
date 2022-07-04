@@ -19,47 +19,45 @@ function FrontpageColumnEdit({ attributes, setAttributes }) {
   return (
     <>
       <InspectorControls>
-        <PanelBody title={ __( 'Main', 'fleximpleblocks' ) }>
+        <PanelBody title={__('Main', 'fleximpleblocks')}>
           <SelectControl
-            label={ __( 'HTML Tag', 'fleximpleblocks' ) }
-            value={ sectionTag }
-            options={ [
+            label={__('HTML Tag', 'fleximpleblocks')}
+            value={sectionTag}
+            options={[
               {
-                label: __( '<div>', 'fleximpleblocks' ),
+                label: __('<div>', 'fleximpleblocks'),
                 value: 'div',
               },
               {
-                label: __( '<section>', 'fleximpleblocks' ),
+                label: __('<section>', 'fleximpleblocks'),
                 value: 'section',
               },
               {
-                label: __( '<aside>', 'fleximpleblocks' ),
+                label: __('<aside>', 'fleximpleblocks'),
                 value: 'aside',
               },
               {
-                label: __( '<header>', 'fleximpleblocks' ),
+                label: __('<header>', 'fleximpleblocks'),
                 value: 'header',
               },
               {
-                label: __( '<main>', 'fleximpleblocks' ),
+                label: __('<main>', 'fleximpleblocks'),
                 value: 'main',
               },
               {
-                label: __( '<footer>', 'fleximpleblocks' ),
+                label: __('<footer>', 'fleximpleblocks'),
                 value: 'footer',
               },
-            ] }
-            onChange={ ( value ) =>
-              setAttributes({ sectionTag: value })
-            }
+            ]}
+            onChange={(value) => setAttributes({ sectionTag: value })}
           />
         </PanelBody>
       </InspectorControls>
 
-      <SectionTag { ...blockProps }>
+      <SectionTag {...blockProps}>
         <InnerBlocks
-          templateLock={ false }
-          templateInsertUpdatesSelection={ false }
+          templateLock={false}
+          templateInsertUpdatesSelection={false}
         />
       </SectionTag>
     </>

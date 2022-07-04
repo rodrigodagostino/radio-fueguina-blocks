@@ -6,17 +6,17 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor'
 /**
  * Block constants
  */
-const ALLOWED_BLOCKS = [ 'radiofueguina-blocks/frontpage-column' ]
+const ALLOWED_BLOCKS = ['radiofueguina-blocks/frontpage-column']
 
 function FrontpageRowEdit() {
   const blockProps = useBlockProps()
 
   return (
-    <div { ...blockProps }>
+    <div {...blockProps}>
       <InnerBlocks
-        templateLock={ false }
-        templateInsertUpdatesSelection={ false }
-        allowedBlocks={ ALLOWED_BLOCKS }
+        templateLock={false}
+        templateInsertUpdatesSelection={false}
+        allowedBlocks={ALLOWED_BLOCKS}
         orientation="horizontal"
       />
     </div>

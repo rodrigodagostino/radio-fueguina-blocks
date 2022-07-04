@@ -9,7 +9,7 @@ function FrontpageColumnSave({ attributes }) {
   const SectionTag = sectionTag
 
   return (
-    <SectionTag { ...useBlockProps.save() }>
+    <SectionTag {...useBlockProps.save()}>
       <InnerBlocks.Content />
     </SectionTag>
   )

@@ -23,17 +23,17 @@ const { name } = metadata
 export { metadata, name }
 
 export const settings = {
-  title: __( 'Front-Page Section', 'radiofueguinablocks' ),
+  title: __('Front-Page Section', 'radiofueguinablocks'),
   description: __(
     'The main structural component to display content in the front page.',
-    'radiofueguinablocks',
+    'radiofueguinablocks'
   ),
   icon,
   keywords: [
     /* translators: block keyword */
-    __( 'Front-Page Section', 'radiofueguinablocks' ),
+    __('Front-Page Section', 'radiofueguinablocks'),
     /* translators: block keyword */
-    __( 'Radio Fueguina block', 'radiofueguinablocks' ),
+    __('Radio Fueguina block', 'radiofueguinablocks'),
   ],
   variations,
 
@@ -42,7 +42,7 @@ export const settings = {
 }
 
 // Provide a custom block class
-function setBlockCustomClassName( className, blockName ) {
+function setBlockCustomClassName(className, blockName) {
   return blockName === name
     ? 'radiofueguina-block-frontpage-section'
     : className
@@ -51,5 +51,5 @@ function setBlockCustomClassName( className, blockName ) {
 wp.hooks.addFilter(
   'blocks.getBlockDefaultClassName',
   'radiofueguina-blocks/radiofueguina-block-frontpage-section',
-  setBlockCustomClassName,
+  setBlockCustomClassName
 )

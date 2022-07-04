@@ -15,25 +15,24 @@ import * as frontpageSectionColumn from './blocks/frontpage-column'
 import * as frontpageSectionRow from './blocks/frontpage-row'
 
 export const registerRadioFueguinaBlocks = () => {
-  [
+  ;[
     billboard,
     frontpageSection,
     frontpageSectionColumn,
     frontpageSectionRow,
-  ].forEach( ( block ) => {
-    if ( !block ) {
+  ].forEach((block) => {
+    if (!block) {
       return
     }
     const { metadata, settings, name } = block
-    if ( metadata ) {
-      unstable__bootstrapServerSideBlockDefinitions({ [ name ]: metadata })
+    if (metadata) {
+      unstable__bootstrapServerSideBlockDefinitions({ [name]: metadata })
     }
-    registerBlockType( name, settings )
+    registerBlockType(name, settings)
   })
 }
 
 registerRadioFueguinaBlocks()
-
 
 /**
  * Block Styles

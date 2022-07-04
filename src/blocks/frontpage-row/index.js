@@ -22,12 +22,12 @@ const { name } = metadata
 export { metadata, name }
 
 export const settings = {
-  title: __( 'Front-Page Row', 'radiofueguinablocks' ),
+  title: __('Front-Page Row', 'radiofueguinablocks'),
   description: __(
     'A single row within a front-page section or column block.',
-    'radiofueguinablocks',
+    'radiofueguinablocks'
   ),
-  parent: [ 'radiofueguina-blocks/frontpage-row' ],
+  parent: ['radiofueguina-blocks/frontpage-row'],
   icon,
   supports: {
     inserter: false,
@@ -40,12 +40,12 @@ export const settings = {
 }
 
 // Provide a custom block class
-function setBlockCustomClassName( className, blockName ) {
+function setBlockCustomClassName(className, blockName) {
   return blockName === name ? 'radiofueguina-block-frontpage-row' : className
 }
 
 wp.hooks.addFilter(
   'blocks.getBlockDefaultClassName',
   'radiofueguina-blocks/radiofueguina-block-frontpage-row',
-  setBlockCustomClassName,
+  setBlockCustomClassName
 )
