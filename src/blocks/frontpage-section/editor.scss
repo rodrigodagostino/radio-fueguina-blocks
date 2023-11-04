@@ -124,7 +124,7 @@ $default-class-name: "radiofueguina-block-frontpage-section";
             > .block-editor-block-list__layout
             > *
             + * {
-            margin-top: rem(20px);
+            margin-top: 1.25rem;
           }
         }
       }
@@ -200,7 +200,7 @@ $default-class-name: "radiofueguina-block-frontpage-section";
       flex-basis: #{math.div(1020 * 100, 1260)}#{"%"};
       margin-top: 0;
       margin-bottom: 0;
-      margin-left: rem(20px);
+      margin-left: 1.25rem;
 
       &
         > .block-editor-inner-blocks
@@ -220,7 +220,7 @@ $default-class-name: "radiofueguina-block-frontpage-section";
             > .block-editor-block-list__layout
             > .block-editor-block-list__block
             + .block-editor-block-list__block {
-            margin-top: rem(20px);
+            margin-top: 1.25rem;
           }
         }
       }

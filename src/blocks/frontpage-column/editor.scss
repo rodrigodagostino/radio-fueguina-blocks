@@ -31,7 +31,7 @@ $default-class-name: "radiofueguina-block-frontpage-column";
     flex-direction: column;
 
     & > * + * {
-      margin-top: rem(20px) !important;
+      margin-top: 1.25rem !important;
     }
 
     & > .fleximple-block-post {
@@ -40,13 +40,13 @@ $default-class-name: "radiofueguina-block-frontpage-column";
     }
 
     & > .fleximple-block-post + .fleximple-block-post {
-      margin-top: rem(20px) !important;
+      margin-top: 1.25rem !important;
     }
   }
 
   .fleximple-block-post + &,
   & + &:not(main) {
-    margin-top: rem(20px) !important;
+    margin-top: 1.25rem !important;
   }
 }
 
@@ -54,7 +54,7 @@ $default-class-name: "radiofueguina-block-frontpage-column";
   .radiofueguina-block-frontpage-column {
     & > .block-editor-inner-blocks > .block-editor-block-list__layout {
       & > .fleximple-block-post + .fleximple-block-post {
-        margin-top: rem(12px) !important;
+        margin-top: 0.75rem !important;
       }
     }
 
@@ -72,7 +72,7 @@ $default-class-name: "radiofueguina-block-frontpage-column";
   .radiofueguina-block-frontpage-column {
     & + &:not(main) {
       margin-top: 0 !important;
-      margin-left: rem(20px) !important;
+      margin-left: 1.25rem !important;
     }
   }
 }

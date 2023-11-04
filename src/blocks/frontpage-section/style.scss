@@ -8,7 +8,7 @@
 $default-class-name: "radiofueguina-block-frontpage-section";
 
 .radiofueguina-block-frontpage-section {
-  padding: rem(16px);
+  padding: 1rem;
   position: relative;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -31,14 +31,14 @@ $default-class-name: "radiofueguina-block-frontpage-section";
     z-index: 10;
 
     .#{$default-class-name}__heading {
-      font-size: rem(22px);
+      font-size: 1.375rem;
       font-weight: 900;
     }
   }
 
   header.radiofueguina-block-frontpage-column
     + main.radiofueguina-block-frontpage-column {
-    margin-top: rem(12px);
+    margin-top: 0.75rem;
   }
 
   main.radiofueguina-block-frontpage-column {
@@ -74,14 +74,14 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 
 @media only screen and (min-width: 46.25em) {
   .radiofueguina-block-frontpage-section {
-    padding: rem(20px);
+    padding: 1.25rem;
     max-width: var(--container__max-width--medium, 740px);
 
     header.radiofueguina-block-frontpage-column {
       justify-content: initial;
 
       .#{$default-class-name}__heading {
-        font-size: rem(24px);
+        font-size: 1.375rem;
         flex-basis: calc(((100% - 40px) / 3) + 20px);
       }
     }
@@ -100,7 +100,7 @@ $default-class-name: "radiofueguina-block-frontpage-section";
           }
 
           & > * + * {
-            margin-top: rem(20px);
+            margin-top: 1.25rem;
           }
         }
       }
@@ -151,7 +151,7 @@ $default-class-name: "radiofueguina-block-frontpage-section";
     header.radiofueguina-block-frontpage-column
       + main.radiofueguina-block-frontpage-column {
       margin-top: 0;
-      margin-left: rem(20px);
+      margin-left: 1.25rem;
     }
   }
 }
