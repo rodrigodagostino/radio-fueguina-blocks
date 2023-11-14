@@ -10,46 +10,9 @@ $default-class-name: "radiofueguina-block-frontpage-column";
   display: flex;
   flex-direction: column;
   flex: 1;
-
-  & > * + * {
-    margin-top: 1.25rem;
-  }
+  gap: 1.25rem;
 
   & > .fleximple-block-post {
     flex: 1;
-
-    & + .fleximple-block-post {
-      margin-top: 1.25rem;
-    }
-  }
-
-  & + &,
-  .fleximple-block-post + & {
-    margin-top: 1.25rem;
-  }
-}
-
-@media only screen and (min-width: 46.25em) {
-  .radiofueguina-block-frontpage-column {
-    & > .fleximple-block-post + .fleximple-block-post {
-      margin-top: 0.75rem;
-    }
-
-    .fleximple-block-post + & {
-      margin-top: 0;
-    }
-
-    & + & {
-      margin-left: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 66.25em) {
-  .radiofueguina-block-frontpage-column {
-    & + &:not(main) {
-      margin-top: 0;
-      margin-left: 1.25rem;
-    }
   }
 }

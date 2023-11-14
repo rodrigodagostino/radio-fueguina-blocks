@@ -17,63 +17,34 @@ $default-class-name: "radiofueguina-block-frontpage-section";
   display: inherit !important;
   background-color: var(--white-rich);
 
-  .block-list-appender {
-    flex: 1;
-  }
-
   &.#{$default-class-name}--placeholder {
     padding: 0;
   }
 
-  &.is-selected
-    .radiofueguina-block-frontpage-column
-    > .block-editor-inner-blocks
-    > .block-editor-block-list__layout,
-  &.has-child-selected
-    .radiofueguina-block-frontpage-column
-    > .block-editor-inner-blocks
-    > .block-editor-block-list__layout {
-    & > .block-editor-block-list__block {
-      margin: 0;
-    }
-  }
-
-  &:not(.is-selected):not(.has-child-selected)
-    .radiofueguina-block-frontpage-column
-    > .block-editor-inner-blocks
-    > .block-editor-block-list__layout {
-    & > .block-editor-block-list__block {
-      margin: 0;
-    }
-  }
-
   header.radiofueguina-block-frontpage-column {
-    margin: 0;
-
     & > .block-editor-inner-blocks > .block-editor-block-list__layout {
       flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
+      gap: 0;
       z-index: 10;
 
       & > .wp-block {
-        margin-top: 0 !important;
+        margin-block: 0;
 
         &:nth-child(3) {
-          margin-left: auto !important;
+          margin-left: auto;
         }
 
         &:nth-child(4),
         &:nth-child(5) {
-          margin-left: var(--space-075) !important;
+          margin-left: var(--space-075);
         }
       }
     }
   }
 
   main.radiofueguina-block-frontpage-column {
-    margin: 0;
-
     & > .block-editor-inner-blocks > .block-editor-block-list__layout {
       &
         > .radiofueguina-block-frontpage-row
@@ -111,21 +82,6 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 
         & > .radiofueguina-block-frontpage-column:nth-child(2) {
           flex-basis: #{math.div(300 * 100, 1020)}#{"%"};
-
-          &
-            > .block-editor-inner-blocks
-            > .block-editor-block-list__layout
-            > * {
-            margin-bottom: 0;
-          }
-
-          &
-            > .block-editor-inner-blocks
-            > .block-editor-block-list__layout
-            > *
-            + * {
-            margin-top: 1.25rem;
-          }
         }
       }
     }
@@ -171,26 +127,20 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 
     header.radiofueguina-block-frontpage-column {
       flex-basis: #{math.div(220 * 100, 1260)}#{"%"};
-      margin-top: 0;
-      margin-bottom: 0;
 
       .block-editor-inner-blocks .block-editor-block-list__layout {
         flex-direction: column;
 
         & > .wp-block {
-          &:nth-child(2) {
-            margin-top: var(--space-050) !important;
-          }
-
           &:nth-child(3) {
-            margin-top: var(--space-125) !important;
-            margin-left: 0 !important;
+            margin-top: var(--space-125);
+            margin-left: 0;
           }
 
           &:nth-child(4),
           &:nth-child(5) {
-            margin-top: var(--space-075) !important;
-            margin-left: 0 !important;
+            margin-top: var(--space-075);
+            margin-left: 0;
           }
         }
       }
@@ -198,9 +148,6 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 
     main.radiofueguina-block-frontpage-column {
       flex-basis: #{math.div(1020 * 100, 1260)}#{"%"};
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: 1.25rem;
 
       &
         > .block-editor-inner-blocks
@@ -214,14 +161,6 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 
         & > .radiofueguina-block-frontpage-column:nth-child(2) {
           flex-basis: #{math.div(300 * 100, 1020)}#{"%"};
-
-          &
-            > .block-editor-inner-blocks
-            > .block-editor-block-list__layout
-            > .block-editor-block-list__block
-            + .block-editor-block-list__block {
-            margin-top: 1.25rem;
-          }
         }
       }
     }

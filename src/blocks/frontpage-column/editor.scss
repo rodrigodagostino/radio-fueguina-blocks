@@ -17,62 +17,14 @@ $default-class-name: "radiofueguina-block-frontpage-column";
     height: 100%;
   }
 
-  .block-list-appender {
-    margin: 20px 0 0;
-
-    .block-editor-default-block-appender,
-    .block-editor-default-block-appender__content {
-      margin: 0;
-    }
-  }
-
   & > .block-editor-inner-blocks > .block-editor-block-list__layout {
     display: flex;
     flex-direction: column;
-
-    & > * + * {
-      margin-top: 1.25rem !important;
-    }
+    gap: 1.25rem;
 
     & > .fleximple-block-post {
       flex: 1;
       height: 100%;
-    }
-
-    & > .fleximple-block-post + .fleximple-block-post {
-      margin-top: 1.25rem !important;
-    }
-  }
-
-  .fleximple-block-post + &,
-  & + &:not(main) {
-    margin-top: 1.25rem !important;
-  }
-}
-
-@media only screen and (min-width: 46.25em) {
-  .radiofueguina-block-frontpage-column {
-    & > .block-editor-inner-blocks > .block-editor-block-list__layout {
-      & > .fleximple-block-post + .fleximple-block-post {
-        margin-top: 0.75rem !important;
-      }
-    }
-
-    .fleximple-block-post + & {
-      margin-top: 0 !important;
-    }
-
-    & + &:not(main) {
-      margin-left: 0 !important;
-    }
-  }
-}
-
-@media only screen and (min-width: 66.25em) {
-  .radiofueguina-block-frontpage-column {
-    & + &:not(main) {
-      margin-top: 0 !important;
-      margin-left: 1.25rem !important;
     }
   }
 }

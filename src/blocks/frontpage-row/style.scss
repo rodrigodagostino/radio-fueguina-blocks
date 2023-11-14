@@ -6,24 +6,13 @@
 
 $default-class-name: "radiofueguina-block-frontpage-row";
 
-@media only screen and (max-width: 46.1875em) {
-  .radiofueguina-block-frontpage-row {
-    & > * + * {
-      margin-top: 1.25rem;
-    }
-  }
-}
-
 @media only screen and (min-width: 46.25em) {
   .radiofueguina-block-frontpage-row {
     display: flex;
+    gap: 1.25rem;
 
     & > * {
       flex: 1;
-    }
-
-    & > * + * {
-      margin-left: 1.25rem;
     }
 
     &.is-two-halves > .radiofueguina-block-frontpage-column {

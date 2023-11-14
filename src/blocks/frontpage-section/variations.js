@@ -107,7 +107,7 @@ const variations = [
               ],
               [
                 'radiofueguina-blocks/frontpage-column',
-                {},
+                { sectionTag: 'aside' },
                 [['fleximple-blocks/ad']],
               ],
             ],
@@ -195,7 +195,7 @@ const variations = [
               ],
               [
                 'radiofueguina-blocks/frontpage-column',
-                {},
+                { sectionTag: 'aside' },
                 [['fleximple-blocks/ad'], ['fleximple-blocks/ad']],
               ],
             ],
@@ -261,7 +261,7 @@ const variations = [
               ],
               [
                 'radiofueguina-blocks/frontpage-column',
-                {},
+                { sectionTag: 'aside' },
                 [['fleximple-blocks/ad']],
               ],
             ],
@@ -359,7 +359,7 @@ const variations = [
               ],
               [
                 'radiofueguina-blocks/frontpage-column',
-                {},
+                { sectionTag: 'aside' },
                 [['fleximple-blocks/ad']],
               ],
             ],
@@ -507,7 +507,7 @@ const variations = [
               ],
               [
                 'radiofueguina-blocks/frontpage-column',
-                {},
+                { sectionTag: 'aside' },
                 [['fleximple-blocks/ad']],
               ],
             ],
@@ -594,7 +594,7 @@ const variations = [
               ],
               [
                 'radiofueguina-blocks/frontpage-column',
-                {},
+                { sectionTag: 'aside' },
                 [['fleximple-blocks/ad']],
               ],
             ],
@@ -723,7 +723,7 @@ const variations = [
               ],
               [
                 'radiofueguina-blocks/frontpage-column',
-                {},
+                { sectionTag: 'aside' },
                 [['fleximple-blocks/ad']],
               ],
             ],

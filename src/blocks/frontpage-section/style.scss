@@ -10,22 +10,21 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 .radiofueguina-block-frontpage-section {
   padding: 1rem;
   position: relative;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
   max-width: var(--container__max-width--small, 480px);
+  background-color: var(--white-rich);
 
   & + & {
     border-top: 1px solid var(--gray-100);
   }
 
   .radiofueguina-block-frontpage-column:empty {
-    margin-top: 0;
     height: 0;
   }
 
   header.radiofueguina-block-frontpage-column {
     display: flex;
     flex-direction: row;
+    gap: 0;
     justify-content: space-between;
     align-items: baseline;
     z-index: 10;
@@ -34,11 +33,6 @@ $default-class-name: "radiofueguina-block-frontpage-section";
       font-size: 1.375rem;
       font-weight: 900;
     }
-  }
-
-  header.radiofueguina-block-frontpage-column
-    + main.radiofueguina-block-frontpage-column {
-    margin-top: 0.75rem;
   }
 
   main.radiofueguina-block-frontpage-column {
@@ -61,7 +55,7 @@ $default-class-name: "radiofueguina-block-frontpage-section";
     bottom: 0;
     z-index: 0;
 
-    $steps: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85,
+    $steps: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85,
       90, 95, 100;
 
     @each $step in $steps {
@@ -69,6 +63,160 @@ $default-class-name: "radiofueguina-block-frontpage-section";
         opacity: math.div($step, 100);
       }
     }
+  }
+
+  &[class*="is-variation-layout-"][class*="-auto"] {
+    .radiofueguina-block-frontpage-column
+      .radiofueguina-block-frontpage-column:first-child
+      .fleximple-block-recent-posts {
+      align-items: stretch;
+
+      &__entry-content {
+        flex: 1;
+      }
+    }
+  }
+
+  &.is-variation-layout-2-auto {
+    .fleximple-block-recent-posts {
+      .fleximple-block-recent-posts__entry {
+        &:first-of-type {
+          grid-column: 1/-1;
+
+          .fleximple-block-recent-posts__entry-title {
+            font-size: 1.375rem;
+          }
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          flex-direction: row;
+
+          .fleximple-block-recent-posts__entry-media {
+            flex-basis: 30%;
+          }
+
+          .fleximple-block-recent-posts__entry-title {
+            font-size: 1.0625rem;
+          }
+        }
+
+        &:nth-of-type(4),
+        &:nth-of-type(5),
+        &:nth-of-type(6) {
+          .fleximple-block-recent-posts__entry-title {
+            font-size: 0.9375rem;
+          }
+
+          .fleximple-block-recent-posts__entry-media {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-variation-layout-4-auto {
+    .fleximple-block-recent-posts {
+      .fleximple-block-recent-posts__entry {
+        &:first-of-type,
+        &:nth-of-type(2) {
+          flex-direction: row;
+
+          .fleximple-block-recent-posts__entry-media {
+            flex-basis: 30%;
+          }
+        }
+
+        &:first-of-type,
+        &:nth-of-type(2),
+        &:nth-of-type(6),
+        &:nth-of-type(7) {
+          .fleximple-block-recent-posts__entry-title {
+            font-size: 1.0625rem;
+          }
+        }
+
+        &:nth-of-type(3),
+        &:nth-of-type(4),
+        &:nth-of-type(5),
+        &:nth-of-type(8),
+        &:nth-of-type(9),
+        &:nth-of-type(10) {
+          .fleximple-block-recent-posts__entry-media {
+            display: none;
+          }
+
+          .fleximple-block-recent-posts__entry-title {
+            font-size: 0.9375rem;
+          }
+        }
+      }
+    }
+  }
+
+  aside.radiofueguina-block-frontpage-column {
+    &:empty {
+      display: none;
+    }
+
+    .fleximple-block-ad {
+      width: 100%;
+      max-width: 20rem;
+    }
+  }
+}
+
+.fleximple-block-post,
+.fleximple-block-recent-posts > .fleximple-block-recent-posts__entry {
+  background-color: var(--white);
+  border-top: 1px solid var(--color-primary);
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--gray-050);
+  }
+}
+
+.fleximple-block-post {
+  &__media {
+    transition: opacity 0.24s;
+  }
+
+  &__content {
+    padding: 0.625rem;
+  }
+
+  &:hover {
+    .fleximple-block-post__media {
+      opacity: 0.9;
+    }
+  }
+}
+
+.fleximple-block-recent-posts {
+  &__entry {
+    &:hover {
+      .fleximple-block-recent-posts__entry-media {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__entry-media {
+    transition: opacity 0.24s;
+  }
+
+  &__entry-content {
+    padding: 0.625rem;
+  }
+}
+
+.fleximple-block-weather {
+  margin-left: auto;
+
+  & + & {
+    margin-left: var(--space-075);
   }
 }
 
@@ -94,20 +242,50 @@ $default-class-name: "radiofueguina-block-frontpage-section";
 
         & > .radiofueguina-block-frontpage-column:nth-child(2) {
           flex-basis: #{math.div(300 * 100, 1020)}#{"%"};
-
-          & > * {
-            margin-bottom: 0;
-          }
-
-          & > * + * {
-            margin-top: 1.25rem;
-          }
         }
       }
     }
 
     .wp-block-image {
       margin-bottom: 0;
+    }
+
+    &.is-variation-layout-2-auto {
+      .fleximple-block-recent-posts {
+        .fleximple-block-recent-posts__entry {
+          &:first-of-type {
+            flex-direction: row-reverse;
+
+            .fleximple-block-recent-posts__entry-media {
+              flex: 0 0 calc(100% / 3 * 2 - var(--space-100) / 2);
+            }
+          }
+
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            flex-direction: column;
+            grid-row: 2/5;
+          }
+        }
+      }
+    }
+
+    &.is-variation-layout-4-auto {
+      .fleximple-block-recent-posts {
+        .fleximple-block-recent-posts__entry {
+          &:first-of-type,
+          &:nth-of-type(2) {
+            grid-row: 1 / 4;
+            flex-direction: column;
+          }
+
+          &:nth-of-type(3),
+          &:nth-of-type(4),
+          &:nth-of-type(5) {
+            grid-column: 3 / 4;
+          }
+        }
+      }
     }
   }
 }
@@ -147,11 +325,15 @@ $default-class-name: "radiofueguina-block-frontpage-section";
     main.radiofueguina-block-frontpage-column {
       flex-basis: #{math.div(1020 * 100, 1260)}#{"%"};
     }
+  }
 
-    header.radiofueguina-block-frontpage-column
-      + main.radiofueguina-block-frontpage-column {
-      margin-top: 0;
-      margin-left: 1.25rem;
+  .fleximple-block-weather {
+    margin-top: var(--space-125);
+    margin-left: 0;
+
+    & + & {
+      margin-top: var(--space-075);
+      margin-left: 0;
     }
   }
 }
