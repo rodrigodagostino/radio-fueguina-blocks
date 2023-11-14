@@ -2,9 +2,9 @@
  * External dependencies
  */
 import classNames from 'classnames'
-import get from 'lodash/get'
-import map from 'lodash/map'
-import isEqual from 'lodash/isEqual'
+import get from 'lodash.get'
+import map from 'lodash.map'
+import isEqual from 'lodash.isequal'
 
 /**
  * WordPress dependencies

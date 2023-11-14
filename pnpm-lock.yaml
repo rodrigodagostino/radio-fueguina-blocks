@@ -4,6 +4,17 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  lodash.get:
+    specifier: 4.4.2
+    version: 4.4.2
+  lodash.isequal:
+    specifier: 4.5.0
+    version: 4.5.0
+  lodash.map:
+    specifier: 4.6.0
+    version: 4.6.0
+
 devDependencies:
   '@babel/core':
     specifier: 7.23.2
@@ -62,9 +73,6 @@ devDependencies:
   ignore-emit-webpack-plugin:
     specifier: 2.0.6
     version: 2.0.6
-  lodash:
-    specifier: 4.17.21
-    version: 4.17.21
   memize:
     specifier: 2.1.0
     version: 2.1.0
@@ -4089,12 +4097,36 @@ packages:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
     dev: true
 
+  /lodash.get@4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    dev: false
+
+  /lodash.isequal@4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: false
+
+  /lodash.isfunction@3.0.9:
+    resolution: {integrity: sha512-AirXNj15uRIMMPihnkInB4i3NHeb4iBtNg9WRWuK2o31S+ePwwNmDPaTL3o7dTJ+VXNZim7rFs4rxN4YU1oUJw==}
+    dev: true
+
+  /lodash.map@4.6.0:
+    resolution: {integrity: sha512-worNHGKLDetmcEYDvh2stPCrrQRkP20E4l0iIS7F8EvzMqBBi7ltvFN5m1HvTf1P7Jk1txKhvFcmYsCr8O2F1Q==}
+    dev: false
+
   /lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
-  /lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+  /lodash.noop@3.0.1:
+    resolution: {integrity: sha512-TmYdmu/pebrdTIBDK/FDx9Bmfzs9x0sZG6QIJuMDTqEPfeciLcN13ij+cOd0i9vwJfBtbG9UQ+C7MkXgYxrIJg==}
+    dev: true
+
+  /lodash.startswith@4.2.1:
+    resolution: {integrity: sha512-XClYR1h4/fJ7H+mmCKppbiBmljN/nGs73iq2SjCT9SF4CBPoUHzLvWmH1GtZMhMBZSiRkHXfeA2RY1eIlJ75ww==}
+    dev: true
+
+  /lodash.throttle@4.1.1:
+    resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
     dev: true
 
   /loose-envify@1.4.0:
@@ -5854,4 +5886,9 @@ packages:
   file:../fleximple-components:
     resolution: {directory: ../fleximple-components, type: directory}
     name: fleximple-components
+    dependencies:
+      lodash.isfunction: 3.0.9
+      lodash.noop: 3.0.1
+      lodash.startswith: 4.2.1
+      lodash.throttle: 4.1.1
     dev: true
