@@ -1,9 +1,7 @@
-/* global fleximpleblocksPluginData */
-
 /**
  * External dependencies
  */
-import classnames from 'classnames'
+import classNames from 'classnames'
 import get from 'lodash/get'
 import map from 'lodash/map'
 import isEqual from 'lodash/isEqual'
@@ -46,6 +44,7 @@ import { useEffect, useState } from '@wordpress/element'
 import metadata from './block.json'
 import ResponsiveSettingsTabPanel from 'fleximple-components/components/responsive-settings-tab-panel'
 import { setResponsiveAttribute } from './../../js/utils'
+import InlineStyles from './inline-styles'
 
 /**
  * Block constants
@@ -72,6 +71,7 @@ function Content({
   setAttributes,
   overlayColor,
   setOverlayColor,
+  clientId,
   instanceId,
   defaultVariation,
   innerBlockCount,
@@ -95,6 +95,10 @@ function Content({
   }, [])
 
   useEffect(() => {
+    setAttributes({ blockId: clientId })
+  }, [clientId])
+
+  useEffect(() => {
     // Store the selected innerBlocks layout in state so that undo and redo functions work properly.
     setTemplate(innerBlockCount ? innerBlocks : null)
   }, [attributes.innerBlockCount, attributes.innerBlocks])
@@ -116,7 +120,7 @@ function Content({
   const defaultClassName = getBlockDefaultClassName(metadata.name)
 
   const blockProps = useBlockProps({
-    className: classnames({
+    className: classNames({
       [`background-image-id-${mediaId}--sm`]: mediaId && mediaUrl.small,
       [`background-image-id-${mediaId}--md`]: mediaId && mediaUrl.medium,
       [`background-image-id-${mediaId}--lg`]: mediaId && mediaUrl.large,
@@ -161,7 +165,7 @@ function Content({
     }),
   })
 
-  const overlayClasses = classnames(`${defaultClassName}__overlay`, {
+  const overlayClasses = classNames(`${defaultClassName}__overlay`, {
     'has-background': overlayColor.color && overlayOpacity,
     [overlayColor.class]: overlayColor.class && overlayOpacity,
     [`opacity-${overlayOpacity}`]: overlayOpacity,
@@ -373,144 +377,13 @@ function Content({
         </InspectorControls>
 
         <section {...blockProps}>
-          {!!mediaId && (
-            <style>
-              {!!mediaId &&
-                !!mediaUrl.small &&
-                `
-              .${defaultClassName}.background-image-id-${mediaId}--sm {
-                background-image: url('${mediaUrl.small}');
-              }
-              ${
-                !!focalPoint.small.x || !!focalPoint.small.y
-                  ? `
-                .${defaultClassName}.background-position-${
-                      focalPoint.small.x * 100
-                    }-${focalPoint.small.y * 100}--sm {
-                  background-position: ${focalPoint.small.x * 100}% ${
-                      focalPoint.small.y * 100
-                    }%;
-                }`
-                  : ''
-              }
-              ${
-                backgroundSize.small
-                  ? `
-                .${defaultClassName}.background-size-${backgroundSize.small}--sm {
-                  background-size: ${backgroundSize.small};
-                }`
-                  : ''
-              }
-              ${
-                backgroundRepeat.small
-                  ? `
-                .${defaultClassName}.background-repeat-${backgroundRepeat.small}--sm {
-                  background-repeat: ${backgroundRepeat.small};
-                }`
-                  : ''
-              }`}
-
-              {!!mediaId &&
-                !!mediaUrl.medium &&
-                `
-              @media only screen and (min-width: ${
-                fleximpleblocksPluginData.settings.mediumBreakpointValue
-              }px) {
-                ${
-                  mediaUrl.medium
-                    ? `
-                  .${defaultClassName}.background-image-id-${mediaId}--md {
-										background-image: url('${mediaUrl.medium}');
-									}`
-                    : ''
-                }
-								${
-                  (!!focalPoint.medium.x || !!focalPoint.small.y) &&
-                  (focalPoint.medium.x !== focalPoint.small.x ||
-                    focalPoint.medium.y !== focalPoint.small.y)
-                    ? `
-                  .${defaultClassName}.background-position-${
-                        focalPoint.medium.x * 100
-                      }-${focalPoint.medium.y * 100}--md {
-										background-position: ${focalPoint.medium.x * 100}% ${
-                        focalPoint.medium.y * 100
-                      }%;
-									}`
-                    : ''
-                }
-								${
-                  !!backgroundSize.medium &&
-                  backgroundSize.medium !== backgroundSize.small
-                    ? `
-                  .${defaultClassName}.background-size-${backgroundSize.medium}--md {
-										background-size: ${backgroundSize.medium};
-									}`
-                    : ''
-                }
-                ${
-                  !!backgroundRepeat.medium &&
-                  backgroundRepeat.medium !== backgroundRepeat.small
-                    ? `
-                  .${defaultClassName}.background-repeat-${backgroundRepeat.medium}--md {
-										background-repeat: ${backgroundRepeat.medium};
-									}`
-                    : ''
-                }
-              }`}
-
-              {!!mediaId &&
-                !!mediaUrl.large &&
-                `
-              @media only screen and (min-width: ${
-                fleximpleblocksPluginData.settings.largeBreakpointValue
-              }px) {
-                ${
-                  mediaUrl.large
-                    ? `
-                  .${defaultClassName}.background-image-id-${mediaId}--lg {
-										background-image: url('${mediaUrl.large}');
-									}`
-                    : ''
-                }
-                ${
-                  (!!focalPoint.large.x || !!focalPoint.large.y) &&
-                  (focalPoint.large.x !== focalPoint.medium.x ||
-                    focalPoint.large.y !== focalPoint.medium.y)
-                    ? `
-                  .${defaultClassName}.background-position-${
-                        focalPoint.large.x * 100
-                      }-${focalPoint.large.y * 100}--lg {
-										background-position: ${focalPoint.large.x * 100}% ${focalPoint.large.y * 100}%;
-									}`
-                    : ''
-                }
-                ${
-                  !!backgroundSize.large &&
-                  backgroundSize.large !== backgroundSize.medium
-                    ? `
-                  .${defaultClassName}.background-size-${backgroundSize.large}--lg {
-										background-size: ${backgroundSize.large};
-									}`
-                    : ''
-                }
-                ${
-                  !!backgroundRepeat.large &&
-                  backgroundRepeat.large !== backgroundRepeat.medium
-                    ? `
-                  .${defaultClassName}.background-repeat-${backgroundRepeat.large}--lg {
-										background-repeat: ${backgroundRepeat.large};
-									}`
-                    : ''
-                }
-              }`}
-            </style>
-          )}
-
           {(overlayColor.color || mediaUrl.small) && (
             <div className={overlayClasses} style={overlayStyles} />
           )}
 
           {blockVariationPicker()}
+
+          <InlineStyles {...{ defaultClassName, attributes, isEditor: true }} />
         </section>
       </>
     )

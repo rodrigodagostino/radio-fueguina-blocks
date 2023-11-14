@@ -3,6 +3,10 @@
   "name": "radiofueguina-blocks/frontpage-section",
   "category": "radiofueguina-blocks",
   "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": null
+    },
     "mediaId": {
       "type": "number",
       "default": null
