@@ -27,7 +27,6 @@ export const settings = {
     'A single row within a front-page section or column block.',
     'radiofueguinablocks'
   ),
-  parent: ['radiofueguina-blocks/frontpage-row'],
   icon,
   supports: {
     inserter: false,

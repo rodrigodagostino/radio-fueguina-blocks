@@ -1,10 +1,7 @@
 /**
  * WordPress dependencies
  */
-import {
-  registerBlockType,
-  unstable__bootstrapServerSideBlockDefinitions, // eslint-disable-line camelcase
-} from '@wordpress/blocks'
+import { registerBlockType } from '@wordpress/blocks'
 
 /**
  * Internal dependencies
@@ -21,14 +18,9 @@ export const registerRadioFueguinaBlocks = () => {
     frontpageSectionColumn,
     frontpageSectionRow,
   ].forEach((block) => {
-    if (!block) {
-      return
-    }
-    const { metadata, settings, name } = block
-    if (metadata) {
-      unstable__bootstrapServerSideBlockDefinitions({ [name]: metadata })
-    }
-    registerBlockType(name, settings)
+    if (!block) return
+    const { metadata, settings } = block
+    registerBlockType(metadata, settings)
   })
 }
 

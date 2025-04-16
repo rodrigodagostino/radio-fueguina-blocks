@@ -1,52 +1,55 @@
 {
-	"apiVersion": 2,
-	"name": "radiofueguina-blocks/billboard",
-	"category": "radiofueguina-blocks",
-	"attributes": {
-		"minHeight": {
-			"type": "object",
-			"default": {
-				"value": 80,
-				"unit": "px"
-			}
-		},
-		"mediaId": {
-			"type": "number",
-			"default": null
-		},
-		"mediaUrl": {
-			"type": "string",
-			"default": null
-		},
-		"focalPoint": {
-			"type": "object",
-			"default": {
-				"x": 0.5,
-				"y": 0.5
-			}
-		},
-		"backgroundSize": {
-			"type": "object",
-			"default": "cover"
-		},
-		"backgroundRepeat": {
-			"type": "object",
-			"default": "no-repeat"
-		},
-		"overlayColor": {
-			"type": "string",
-			"default": "black"
-		},
-		"overlayColorValue": {
-			"type": "string",
-			"default": "#15151a"
-		},
-		"customOverlayColor": {
-			"type": "string"
-		},
-		"overlayOpacity": {
-			"type": "number",
-			"default": 60
-		}
-	}
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "radiofueguina-blocks/billboard",
+  "title": "Billboard",
+  "category": "radiofueguina-blocks",
+  "textdomain": "radiofueguinablocks",
+  "attributes": {
+    "minHeight": {
+      "type": "object",
+      "default": {
+        "value": 80,
+        "unit": "px"
+      }
+    },
+    "mediaId": {
+      "type": "number",
+      "default": null
+    },
+    "mediaUrl": {
+      "type": "string",
+      "default": null
+    },
+    "focalPoint": {
+      "type": "object",
+      "default": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "backgroundSize": {
+      "type": "object",
+      "default": "cover"
+    },
+    "backgroundRepeat": {
+      "type": "object",
+      "default": "no-repeat"
+    },
+    "overlayColor": {
+      "type": "string",
+      "default": "black"
+    },
+    "overlayColorValue": {
+      "type": "string",
+      "default": "#15151a"
+    },
+    "customOverlayColor": {
+      "type": "string"
+    },
+    "overlayOpacity": {
+      "type": "number",
+      "default": 60
+    }
+  }
 }

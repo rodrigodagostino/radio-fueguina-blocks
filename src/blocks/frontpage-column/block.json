@@ -1,7 +1,10 @@
 {
-  "apiVersion": 2,
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
   "name": "radiofueguina-blocks/frontpage-column",
+  "title": "Front-Page Column",
   "category": "radiofueguina-blocks",
+  "textdomain": "radiofueguinablocks",
   "attributes": {
     "sectionTag": {
       "type": "string",
