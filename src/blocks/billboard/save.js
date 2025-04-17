@@ -18,10 +18,12 @@ import {
  */
 import metadata from './block.json'
 import { hexToRGB } from '../../js/utils'
+import InlineStyles from './inline-styles'
 
 const { name } = metadata
 
 function BillboardSave({
+  attributes,
   attributes: {
     minHeight,
     mediaId,
@@ -65,58 +67,11 @@ function BillboardSave({
 
   return (
     <div {...useBlockProps.save({ className: classes })}>
-      <style>
-        {!!minHeight.value &&
-          `
-          .${defaultClassName}.min-height-${
-            minHeight.value + (minHeight.unit === '%' ? 'pct' : minHeight.unit)
-          } {
-						min-height: ${minHeight.value + minHeight.unit};
-					}`}
-        {!!mediaId &&
-          mediaUrl &&
-          `
-          ${
-            mediaUrl
-              ? `
-            .${defaultClassName}.background-image-id-${mediaId} {
-              background-image: url('${mediaUrl}');
-            }`
-              : ''
-          }
-          ${
-            !!focalPoint.x || !!focalPoint.y
-              ? `
-            .${defaultClassName}.background-position-${focalPoint.x * 100}-${
-                  focalPoint.y * 100
-                } {
-              background-position: ${focalPoint.x * 100}% ${
-                  focalPoint.y * 100
-                }%;
-            }`
-              : ''
-          }
-          ${
-            backgroundSize
-              ? `
-            .${defaultClassName}.background-size-${backgroundSize} {
-              background-size: ${backgroundSize};
-            }`
-              : ''
-          }
-          ${
-            backgroundRepeat
-              ? `
-            .${defaultClassName}.background-repeat-${backgroundRepeat} {
-              background-repeat: ${backgroundRepeat};
-            }`
-              : ''
-          }`}
-      </style>
-
       <div className={overlayClasses} style={overlayStyles}>
         <InnerBlocks.Content />
       </div>
+
+      <InlineStyles {...{ defaultClassName, attributes }} />
     </div>
   )
 }
