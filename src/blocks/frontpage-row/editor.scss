@@ -5,10 +5,10 @@
  * which makes it higher in priority.
  */
 
-$default-class-name: "radiofueguina-block-frontpage-row";
+$default-class-name: "radiofueguina-blocks-frontpage-row";
 
 @media only screen and (min-width: 46.25em) {
-  .radiofueguina-block-frontpage-row {
+  .radiofueguina-blocks-frontpage-row {
     display: inherit !important;
 
     & > .block-editor-inner-blocks > .block-editor-block-list__layout {

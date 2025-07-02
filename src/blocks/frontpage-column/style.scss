@@ -4,15 +4,15 @@
  * CSS for both frontend + backend.
  */
 
-$default-class-name: "radiofueguina-block-frontpage-column";
+$default-class-name: "radiofueguina-blocks-frontpage-column";
 
-.radiofueguina-block-frontpage-column {
+.radiofueguina-blocks-frontpage-column {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1.25rem;
 
-  & > .fleximple-block-post {
+  & > .fleximple-blocks-post {
     flex: 1;
   }
 }

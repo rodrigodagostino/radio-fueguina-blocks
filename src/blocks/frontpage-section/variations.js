@@ -33,7 +33,7 @@ const variations = [
           [
             'core/heading',
             {
-              className: 'radiofueguina-block-frontpage-section__heading',
+              className: 'radiofueguina-blocks-frontpage-section__heading',
               content: __('Section Title', 'radiofueguinablocks'),
             },
           ],
@@ -221,7 +221,7 @@ const variations = [
           [
             'core/heading',
             {
-              className: 'radiofueguina-block-frontpage-section__heading',
+              className: 'radiofueguina-blocks-frontpage-section__heading',
               content: __('Section Title', 'radiofueguinablocks'),
             },
           ],
@@ -385,7 +385,7 @@ const variations = [
           [
             'core/heading',
             {
-              className: 'radiofueguina-block-frontpage-section__heading',
+              className: 'radiofueguina-blocks-frontpage-section__heading',
               content: __('Section Title', 'radiofueguinablocks'),
             },
           ],
@@ -467,7 +467,7 @@ const variations = [
           [
             'core/heading',
             {
-              className: 'radiofueguina-block-frontpage-section__heading',
+              className: 'radiofueguina-blocks-frontpage-section__heading',
               content: __('Section Title', 'radiofueguinablocks'),
             },
           ],
@@ -620,7 +620,7 @@ const variations = [
           [
             'core/heading',
             {
-              className: 'radiofueguina-block-frontpage-section__heading',
+              className: 'radiofueguina-blocks-frontpage-section__heading',
               content: __('Section Title', 'radiofueguinablocks'),
             },
           ],
@@ -749,7 +749,7 @@ const variations = [
           [
             'core/heading',
             {
-              className: 'radiofueguina-block-frontpage-section__heading',
+              className: 'radiofueguina-blocks-frontpage-section__heading',
               content: __('Section Title', 'radiofueguinablocks'),
             },
           ],

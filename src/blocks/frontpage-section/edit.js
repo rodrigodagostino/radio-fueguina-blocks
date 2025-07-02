@@ -425,7 +425,7 @@ const Placeholder = ({
   }
 
   const blockProps = useBlockProps({
-    className: 'radiofueguina-block-frontpage-section--placeholder',
+    className: 'radiofueguina-blocks-frontpage-section--placeholder',
   })
 
   return (

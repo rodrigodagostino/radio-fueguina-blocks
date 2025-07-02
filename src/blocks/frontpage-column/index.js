@@ -40,11 +40,13 @@ export const settings = {
 
 // Provide a custom block class
 function setBlockCustomClassName(className, blockName) {
-  return blockName === name ? 'radiofueguina-block-frontpage-column' : className
+  return blockName === name
+    ? 'radiofueguina-blocks-frontpage-column'
+    : className
 }
 
 wp.hooks.addFilter(
   'blocks.getBlockDefaultClassName',
-  'radiofueguina-blocks/radiofueguina-block-frontpage-column',
+  'radiofueguina-blocks/radiofueguina-blocks-frontpage-column',
   setBlockCustomClassName
 )

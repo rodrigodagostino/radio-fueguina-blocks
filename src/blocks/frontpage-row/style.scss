@@ -4,10 +4,10 @@
  * CSS for both frontend + backend.
  */
 
-$default-class-name: "radiofueguina-block-frontpage-row";
+$default-class-name: "radiofueguina-blocks-frontpage-row";
 
 @media only screen and (min-width: 46.25em) {
-  .radiofueguina-block-frontpage-row {
+  .radiofueguina-blocks-frontpage-row {
     display: flex;
     gap: 1.25rem;
 
@@ -15,25 +15,25 @@ $default-class-name: "radiofueguina-block-frontpage-row";
       flex: 1;
     }
 
-    &.is-two-halves > .radiofueguina-block-frontpage-column {
+    &.is-two-halves > .radiofueguina-blocks-frontpage-column {
       flex: 0 1 calc((100% - 20px) / 2);
     }
 
     &.is-two-and-one-thirds
-      > .radiofueguina-block-frontpage-column:nth-child(2) {
+      > .radiofueguina-blocks-frontpage-column:nth-child(2) {
       flex: 0 1 calc((100% - 40px) / 3);
     }
 
     &.is-one-and-two-thirds
-      > .radiofueguina-block-frontpage-column:first-child {
+      > .radiofueguina-blocks-frontpage-column:first-child {
       flex: 0 1 calc((100% - 40px) / 3);
     }
 
     &.is-two-and-one-thirds
-      > .radiofueguina-block-frontpage-column:nth-child(2),
+      > .radiofueguina-blocks-frontpage-column:nth-child(2),
     &.is-one-and-two-thirds
-      > .radiofueguina-block-frontpage-column:first-child {
-      & > .fleximple-block-post {
+      > .radiofueguina-blocks-frontpage-column:first-child {
+      & > .fleximple-blocks-post {
         flex: 0 1 4.75rem;
 
         &:first-child {

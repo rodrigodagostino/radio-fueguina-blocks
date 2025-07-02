@@ -5,9 +5,9 @@
  * which makes it higher in priority.
  */
 
-$default-class-name: "radiofueguina-block-frontpage-column";
+$default-class-name: "radiofueguina-blocks-frontpage-column";
 
-.radiofueguina-block-frontpage-column {
+.radiofueguina-blocks-frontpage-column {
   display: inherit !important;
   flex: 1;
 
@@ -22,7 +22,7 @@ $default-class-name: "radiofueguina-block-frontpage-column";
     flex-direction: column;
     gap: 1.25rem;
 
-    & > .fleximple-block-post {
+    & > .fleximple-blocks-post {
       flex: 1;
       height: 100%;
     }
