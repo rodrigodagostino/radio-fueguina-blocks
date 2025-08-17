@@ -6,14 +6,19 @@
 
 $default-class-name: "radiofueguina-blocks-frontpage-row";
 
+.radiofueguina-blocks-frontpage-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  & > * {
+    flex: 1;
+  }
+}
+
 @media only screen and (min-width: 46.25em) {
   .radiofueguina-blocks-frontpage-row {
-    display: flex;
-    gap: 1.25rem;
-
-    & > * {
-      flex: 1;
-    }
+    flex-direction: row;
 
     &.is-two-halves > .radiofueguina-blocks-frontpage-column {
       flex: 0 1 calc((100% - 20px) / 2);
