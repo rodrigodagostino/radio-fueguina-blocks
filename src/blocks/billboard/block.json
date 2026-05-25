@@ -6,6 +6,10 @@
   "category": "radiofueguina-blocks",
   "textdomain": "radiofueguinablocks",
   "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": null
+    },
     "minHeight": {
       "type": "object",
       "default": {

@@ -25,6 +25,7 @@ const { name } = metadata
 function BillboardSave({
   attributes,
   attributes: {
+    blockId,
     minHeight,
     mediaId,
     mediaUrl,
@@ -66,7 +67,10 @@ function BillboardSave({
   }
 
   return (
-    <div {...useBlockProps.save({ className: classes })}>
+    <div
+      {...useBlockProps.save({ className: classes })}
+      data-block-id={blockId}
+    >
       <div className={overlayClasses} style={overlayStyles}>
         <InnerBlocks.Content />
       </div>

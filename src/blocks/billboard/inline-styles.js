@@ -8,30 +8,30 @@ const InlineStyles = ({
 
   return (
     <style>
-      {`.${blockSelector}.min-height-${minHeight.value + (minHeight.unit === '%' ? 'pct' : minHeight.unit)} {
+      {`${blockSelector}.min-height-${minHeight.value + (minHeight.unit === '%' ? 'pct' : minHeight.unit)} {
 					min-height: ${minHeight.value + minHeight.unit};
 				}`}
 
       {!!mediaId &&
         !!mediaUrl &&
-        `.${blockSelector}.background-image-id-${mediaId} {
+        `${blockSelector}.background-image-id-${mediaId} {
 					background-image: url('${mediaUrl}');
 				}`}
 
       {!!focalPoint.x || !!focalPoint.y
-        ? `.${blockSelector}.background-position-${focalPoint.x * 100}-${focalPoint.y * 100} {
+        ? `${blockSelector}.background-position-${focalPoint.x * 100}-${focalPoint.y * 100} {
 						background-position: ${focalPoint.x * 100}% ${focalPoint.y * 100}%;
 					}`
         : ''}
 
       {backgroundSize
-        ? `.${blockSelector}.background-size-${backgroundSize} {
+        ? `${blockSelector}.background-size-${backgroundSize} {
 						background-size: ${backgroundSize};
 					}`
         : ''}
 
       {backgroundRepeat
-        ? `.${blockSelector}.background-repeat-${backgroundRepeat} {
+        ? `${blockSelector}.background-repeat-${backgroundRepeat} {
 						background-repeat: ${backgroundRepeat};
 					}`
         : ''}

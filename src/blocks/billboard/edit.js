@@ -1,6 +1,7 @@
 /**
  * External dependencies
  */
+import { useEffect } from 'react'
 import classnames from 'classnames'
 
 /**
@@ -58,6 +59,7 @@ const INNER_BLOCKS_TEMPLATE = [
 function BillboardEdit({
   attributes,
   attributes: {
+    blockId,
     minHeight,
     mediaId,
     mediaUrl,
@@ -69,8 +71,13 @@ function BillboardEdit({
   overlayColor,
   setOverlayColor,
   setAttributes,
+  clientId,
   instanceId,
 }) {
+  useEffect(() => {
+    setAttributes({ blockId: clientId })
+  }, [clientId])
+
   const defaultClassName = getBlockDefaultClassName(name)
 
   const classes = classnames({
@@ -225,7 +232,7 @@ function BillboardEdit({
             <ColorPalette
               value={overlayColor.color}
               onChange={(value) => {
-                setOverlayColor, setAttributes({ overlayColorValue: value })
+                ;(setOverlayColor, setAttributes({ overlayColorValue: value }))
               }}
             />
           </BaseControl>
@@ -242,7 +249,7 @@ function BillboardEdit({
         </PanelBody>
       </InspectorControls>
 
-      <div {...blockProps}>
+      <div {...blockProps} data-block-id={blockId}>
         {!!overlayColor && (
           <div className={overlayClasses} style={overlayStyles}>
             <InnerBlocks
