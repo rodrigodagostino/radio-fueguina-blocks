@@ -27,6 +27,7 @@ $default-class-name: "radiofueguina-blocks-frontpage-section";
     gap: 0;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 0.5rem;
     z-index: 10;
 
     .#{$default-class-name}__heading {
