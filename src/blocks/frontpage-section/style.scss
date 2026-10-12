@@ -157,6 +157,11 @@ $default-class-name: "radiofueguina-blocks-frontpage-section";
   }
 
   aside.radiofueguina-blocks-frontpage-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+
     &:empty {
       display: none;
     }
