@@ -19,6 +19,7 @@ $default-class-name: "radiofueguina-blocks-frontpage-row";
 @media only screen and (min-width: 46.25em) {
   .radiofueguina-blocks-frontpage-row {
     flex-direction: row;
+    align-items: start;
 
     &.is-two-halves > .radiofueguina-blocks-frontpage-column {
       flex: 0 1 calc((100% - 20px) / 2);
